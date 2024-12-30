@@ -1,8 +1,5 @@
 import os, os.path
-from re import sub
 import pandas as pd
-import math
-from functools import reduce
 
 def printDict(dic):
 	for key,value in dic.items():
@@ -10,8 +7,10 @@ def printDict(dic):
 
 # Pandas print options
 pd.set_option('display.max_rows', 0)
-pd.set_option('display.max_columns', 10)
+pd.set_option('display.max_columns', 0)
 pd.set_option('display.width', 0)
+
+# ================================================== Importing ACNH data ==================================================
 
 # Rename csvs (only need to do once)
 for filename in os.listdir('acnh_data'):
@@ -37,6 +36,29 @@ for filename in os.listdir('acnh_data'):
 	varList.append(varName)
 	dfList.append(globals()[varName])
 
+print(varList)
+
+# ================================================== Removing items that can't be used in HHP ==================================================
+
+# 'Other' table has different filename columns
+other.rename({"Storage Filename": "Filename"}, axis=1, inplace=True)
+# Storage image file does not exist for plants, use inventory image instead
+other.loc[(other['Tag'] == 'Plants') & (other['Name'].str.contains(r"\b(bush|plant|tree)\b")), 'Filename'] = other['Inventory Filename']
+# 'Unnecessary' items (permits, recipe sets, tent kits, etc) are not in HHP building catalog
+other.drop(other[other['Tag'] == 'Unnecessary'].index, inplace=True)
+
+# Set-up kits, Jingle bag, May Day worn axe
+toolsgoods.drop(toolsgoods[toolsgoods['Catalog'] == 'Not in catalog'].index, inplace=True)
+
+# Hazure songs
+music.drop(music[music['Catalog'] == 'Not in catalog'].index, inplace=True)
+
+# HHP uniforms
+tops.drop(tops[tops['Source Notes'] == 'Only available as a work clothes for Paradise Planning'].index, inplace=True)
+dressup.drop(dressup[dressup['Source Notes'] == 'Only available as a work clothes for Paradise Planning'].index, inplace=True)
+
+# ================================================== Villager & facility unlocks ==================================================
+
 # Import HHP furniture lists
 villagerUnlocks = pd.read_csv('hhp_data/furniture-per-villager.csv',dtype=object)
 facilityUnlocks = pd.read_csv('hhp_data/furniture-per-facility.csv',dtype=object)
@@ -51,17 +73,17 @@ villToFurn = {
 }
 
 # wrangling the messy facilities csv
-facilities = ["School", "Cafe", "Restaurant", "Hospital", "Apparel Shop", "Start"]
+facilities = ["School", "Cafe", "Restaurant", "Hospital", "Apparel Shop", "Start", "Leif Lesson", "6 Homes and School"]
 for facility in facilities:
     villToFurn[facility] = []
 
 for _, row in facilityUnlocks.iterrows():
 	if str(row["Variation Name (added)"]) not in ["nan","No Variations"]:
-		itemName = f'{row["English Name (added)"]} ({row["Variation Name (added)"]})'
+		itemName = row['English Name (added)'] + " (" + row['Variation Name (added)'] + ")"
 	else:
 		itemName = row["English Name (added)"]
 	for facility in facilities:
-		if row[facility] == '1':
+		if row[facility] == '1' and itemName not in villToFurn[facility]:
 			villToFurn[facility].append(itemName)
 
 # Fixing required furniture items that don't include colors
@@ -92,6 +114,8 @@ for vill,furnList in villToFurn.items():
 		else:
 			furnToVill[furn].append(vill)
 
+# ================================================== Combining everything into one table ==================================================
+
 # Create dataframe with all items
 megaDf = pd.concat(dfList,ignore_index=True)
 #megaDf.to_csv("output/mega.csv")
@@ -105,10 +129,11 @@ megaDf = megaDf.filter(['Filename','Name','Variation','Pattern','DIY','Buy','Sel
 
 # Create image link from filename
 megaDf['Image'] = "https://acnhcdn.com/latest/FtrIcon/" + megaDf['Filename'] + ".png"
-megaDf.drop('Filename',axis=1,inplace=True)
+# Use menu icon instead for plants that don't have an inventory image
+megaDf.loc[(megaDf['Tag'] == 'Plants') & (megaDf['Name'].str.contains(r"\b(bush|plant|tree)\b")), 'Image'] = "https://acnhcdn.com/latest/MenuIcon/" + megaDf['Filename'] + ".png"
+megaDf.drop('Filename',axis=1,inplace=True) # Don't need filename anymore
 
 # Make naming convention of clothing match the hhp dataset
-megaDf.loc[megaDf['Name'] == "explorer shirt", 'Name'] = "explorer tee"
 clothing = ['accessories','bags','bottoms','clothingother','dressup','headwear','tops','umbrellas','socks','shoes']
 megaDf.loc[megaDf['Tab'].isin(clothing) & ~megaDf['Variation'].isna(), 'Name'] = megaDf['Name'] + " (" + megaDf['Variation'] + ")"
 
@@ -126,8 +151,9 @@ groupedMegaDf = (
     megaDf.groupby(
         [col for col in megaDf.columns if col not in ["Variation", "Image"]], as_index=False
     ).agg({
-        "Variation": list,
-        "Image": list
+    	# Single variations remain strings, not single-item lists
+        "Variation": lambda x: x.iloc[0] if len(x) == 1 else list(x),
+        "Image": lambda x: x.iloc[0] if len(x) == 1 else list(x),
     })
 )
 # Merge the grouped data back to the original DataFrame
@@ -145,6 +171,8 @@ mergeDf.drop(['Variation_grouped', 'Image_grouped'], axis=1, inplace=True)
 # Remove duplicate rows while keeping consolidated lists
 megaDf = mergeDf.drop_duplicates(subset=[col for col in mergeDf.columns if col not in ['Variation', 'Image']])
 
+# ================================================== Adding "photo studio" items not in original acnh datasets ==================================================
+
 # Combine flower bags into "seed bag"
 oldBags = megaDf['Name'].str.contains('bag') & (megaDf['Source'] == "Nook's Cranny; Leif")
 megaDf = megaDf[~oldBags]
@@ -158,6 +186,7 @@ seedBag = {
     'Tag': 'Plants',
     'Customize': False,
     'Cyrus': False,
+    'Image': 'https://acnhcdn.com/latest/FtrIcon/PhotoStudioSeedBag.png'
 }
 seedBag = pd.DataFrame([seedBag])
 megaDf = pd.concat([megaDf,seedBag],ignore_index=True)
@@ -171,7 +200,8 @@ wallpaperItem = {
 	'Tab': 'other',
 	'Tag': 'Etc',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/PhotoStudioWall.png'
 }
 flooringItem = {
 	'Name': 'flooring',
@@ -181,7 +211,8 @@ flooringItem = {
 	'Tab': 'other',
 	'Tag': 'Etc',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/PhotoStudioFloor.png'
 }
 recipeItem = {
 	'Name': 'recipe',
@@ -191,7 +222,8 @@ recipeItem = {
 	'Tab': 'other',
 	'Tag': 'Etc',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/PhotoStudioRecipe.png'
 }
 rock = {
 	'Name': 'rock',
@@ -201,7 +233,8 @@ rock = {
 	'Tab': 'other',
 	'Tag': 'Plants',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditStone.png'
 }
 hardwoodStump = {
 	'Name': 'hardwood-tree stump',
@@ -211,7 +244,8 @@ hardwoodStump = {
 	'Tab': 'other',
 	'Tag': 'Plants',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeOakStump.png'
 }
 cedarStump = {
 	'Name': 'cedar-tree stump',
@@ -221,7 +255,8 @@ cedarStump = {
 	'Tab': 'other',
 	'Tag': 'Plants',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeCedarStump.png'
 }
 coconutStump = {
 	'Name': 'coconut-tree stump',
@@ -231,7 +266,8 @@ coconutStump = {
 	'Tab': 'other',
 	'Tag': 'Plants',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreePalmStump.png'
 }
 bambooStump = {
 	'Name': 'cut bamboo',
@@ -241,7 +277,8 @@ bambooStump = {
 	'Tab': 'other',
 	'Tag': 'Plants',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeBambooStump.png'
 }
 decorCedar = {
 	'Name': 'decorated cedar tree',
@@ -251,13 +288,16 @@ decorCedar = {
 	'Tab': 'other',
 	'Tag': 'Plants',
 	'Customize': False,
-	'Cyrus': False
+	'Cyrus': False,
+	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeCedarDeco.png'
 }
 
 decorModeItems = pd.DataFrame([wallpaperItem,flooringItem,recipeItem,rock,hardwoodStump,cedarStump,coconutStump,bambooStump,decorCedar])
 megaDf = pd.concat([megaDf,decorModeItems],ignore_index=True)
 
-# Fix missing or misspelled entries
+# ================================================== Fixing other misspelled/missing items ==================================================
+
+megaDf.loc[megaDf['Name'] == "explorer shirt", 'Name'] = "explorer tee"
 megaDf.loc[megaDf['Name'] == 'welding mask', 'Name'] = 'welding mask (Red)'
 megaDf.loc[megaDf['Name'] == 'matronly bun', 'Name'] = 'matronly bun (Hair Color)'
 megaDf.loc[megaDf['Name'] == 'Noh mask', 'Name'] = 'Noh mask (White)'
@@ -290,8 +330,9 @@ megaDf.loc[megaDf['Name'] == "handlebar mustache", 'Name'] = "handlebar mustache
 #missing = [i for i in furnToVill if i not in megaDf['Name'].tolist() and "'s poster" not in i and "'s photo" not in i]
 #print(missing)
 
-# Fixing null/inconsistent column values/types
-megaDf['Catalog'].fillna("Not in catalog")
+# ================================================== Adding, fixing, and cleaning up columns ==================================================
+
+#megaDf['Catalog'].fillna("Not in catalog")
 megaDf['DIY'] = megaDf['DIY'].map({'Yes':True,'No':False}).astype(bool)
 
 # Add list of villagers/facilities to each item
@@ -299,6 +340,9 @@ megaDf['HHP Source'] = megaDf['Name'].map(furnToVill)
 
 # todo: Fill in HHP sources aside from villagers/facilities
 
-print(megaDf)
+# ================================================== Exporting finished dataset ==================================================
+
+#print(megaDf[megaDf['Name']=='blue-hyacinth plant'])
 megaDf.info()
+
 megaDf.to_csv("output/allitems.csv")

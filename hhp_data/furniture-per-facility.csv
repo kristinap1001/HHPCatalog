@@ -1,4 +1,4 @@
-UniqueID,Label,English Name (added),Variation Name (added),RolePriority,TargetItems,UnlockEventBit,Partition Wall,Unused,School,Cafe,Restaurant,Hospital,Apparel Shop,Start,Unused,Unused,Unused,Leif Lesson,Wooden Lesson,Golden Lesson,???,Brick Lesson,Concrete Lesson,Steel Lesson,Simple Lesson,Marble Lesson,???,???
+UniqueID,Label,English Name (added),Variation Name (added),RolePriority,TargetItems,UnlockEventBit,Partition Wall,Unused,School,Cafe,Restaurant,Hospital,Apparel Shop,Start,Unused,Unused,Unused,Leif Lesson,Wooden Lesson,Golden Lesson,6 Homes and School,Brick Lesson,Concrete Lesson,Steel Lesson,Simple Lesson,Marble Lesson,???,???
 ,,,,,,,1,2,4,8,10,20,40,80,100,200,400,800,1000,2000,4000,8000,10000,20000,40000,80000,100000,200000
 85,FtrRailroad,train set,,,0,8,,,,1,,,,,,,,,,,,,,,,,,
 117,TopsTexTopYshirtsHSchoolshirts1,short-sleeved uniform top,Blue necktie,,0,4,,,1,,,,,,,,,,,,,,,,,,,
