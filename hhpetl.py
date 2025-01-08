@@ -1,5 +1,7 @@
+# type: ignore[reportUndefinedVariable] (pylance doesn't recognize variables declared via globals()[varName])
 import os, os.path
 import pandas as pd
+import re
 
 def printDict(dic):
 	for key,value in dic.items():
@@ -191,6 +193,47 @@ seedBag = {
 seedBag = pd.DataFrame([seedBag])
 megaDf = pd.concat([megaDf,seedBag],ignore_index=True)
 
+# Combine shrub starts
+shrubs = ['blue-hydrangea','holly','orange-tea-olive','pink-azalea','pink-camellia','pink-hydrangea','pink-plumeria','red-camellia','red-hibiscus',
+		  'white-azalea','white-plumeria','yellow-hibiscus','yellow-tea-olive']
+shrubRe = "|".join(re.escape(item) for item in shrubs)
+oldShrubStarts = megaDf['Name'].str.contains(shrubRe) & (megaDf['Source'] == "Leif")
+megaDf = megaDf[~oldShrubStarts]
+shrubStart = {
+	'Name': 'shrub start',
+    'DIY': 'No',
+    'Buy': 280,
+    'Sell': 70,
+    'Source': "Leif",
+    'Tab': 'other',
+    'Tag': 'Plants',
+    'Customize': False,
+    'Cyrus': False,
+    'Image': 'https://acnhcdn.com/latest/FtrIcon/SeedHydrangeaBlue.png'
+}
+shrubStart = pd.DataFrame([shrubStart])
+megaDf = pd.concat([megaDf,shrubStart],ignore_index=True)
+
+# Combine produce starts
+produce = ['carrot','pumpkin','sugarcane','tomato','wheat']
+produceRe = "|".join(re.escape(item) for item in produce)
+oldProduce = megaDf['Name'].str.contains(produceRe) & (megaDf['Source'] == "Leif")
+megaDf = megaDf[~oldProduce]
+produceStart = {
+	'Name': 'produce start',
+    'DIY': 'No',
+    'Buy': 280,
+    'Sell': 70,
+    'Source': "Leif",
+    'Tab': 'other',
+    'Tag': 'Plants',
+    'Customize': False,
+    'Cyrus': False,
+    'Image': 'https://acnhcdn.com/latest/FtrIcon/SeedCarrot.png'
+}
+produceStart = pd.DataFrame([produceStart])
+megaDf = pd.concat([megaDf,produceStart],ignore_index=True)
+
 # Other items that are only obtainable in editing mode
 wallpaperItem = {
 	'Name': 'wallpaper',
@@ -332,13 +375,16 @@ megaDf.loc[megaDf['Name'] == "handlebar mustache", 'Name'] = "handlebar mustache
 
 # ================================================== Adding, fixing, and cleaning up columns ==================================================
 
-#megaDf['Catalog'].fillna("Not in catalog")
+megaDf.loc[megaDf['Catalog'] == 'Not in catalog', 'Catalog'] = 'Promotion' # for some reason Sanrio, Mario, & Pocket Camp items say "not in catalog"
+megaDf['Catalog'].fillna("Not in catalog", inplace=True)
+
 megaDf['DIY'] = megaDf['DIY'].map({'Yes':True,'No':False}).astype(bool)
 
 # Add list of villagers/facilities to each item
 megaDf['HHP Source'] = megaDf['Name'].map(furnToVill)
 
-# todo: Fill in HHP sources aside from villagers/facilities
+# Fill in HHP sources aside from villagers/facilities
+megaDf['HHP Source'].fillna("From player catalog after 27th home", inplace=True)
 
 # ================================================== Exporting finished dataset ==================================================
 
