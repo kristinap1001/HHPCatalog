@@ -14,7 +14,7 @@ def printDict(dic):
 
 # Pandas print options
 pd.set_option('display.max_rows', 0)
-pd.set_option('display.max_columns', 10)
+pd.set_option('display.max_columns', 5)
 pd.set_option('display.width', 0)
 
 # ================================================== Import and fix villager & facility unlocks ==================================================
@@ -204,26 +204,24 @@ megaDf.loc[~megaDf['Pattern'].isna(), 'Variation'] = megaDf['Variation'] + " + "
 megaDf.loc[megaDf['Variation'].isna(), 'Variation'] = megaDf['Pattern']
 megaDf.drop('Pattern',axis=1,inplace=True)
 
+# Including columns with all null values (0 unique values) in subset will result in some variations not getting grouped together properly
+# The only exception is 'Sell' because no items without a sell price have variations, and 'Sell' is needed to differentiate genuine artworks
+groupCols = ['Name','DIY','Sell','Source','Catalog','Tab','Customize','Cyrus']
+
 # Group by all columns except 'Variation' and 'Image', consolidating 'Variation' and 'Image' into lists
-groupedMegaDf = (
-    megaDf.groupby(
-        [col for col in megaDf.columns if col not in ["Variation", "Image"]], as_index=False
-    ).agg({
+groupedMegaDf = megaDf.groupby(groupCols,as_index=False)[["Variation","Image"]].agg({
     	# Single variations remain strings, not single-item lists
         "Variation": lambda x: x.iloc[0] if len(x) == 1 else list(x),
         "Image": lambda x: x.iloc[0] if len(x) == 1 else list(x),
     })
-)
+
 # Merge the grouped data back to the original DataFrame
-mergeDf = pd.merge(
-    megaDf, groupedMegaDf, 
-    on=[col for col in megaDf.columns if col not in ["Variation", "Image"]], 
-    how='left', 
-    suffixes=('', '_grouped')
-)
+mergeDf = pd.merge(megaDf, groupedMegaDf, on=groupCols, how='left', suffixes=('', '_grouped'))
+
 # Replace original columns with the grouped lists where applicable
 mergeDf['Variation'] = mergeDf['Variation_grouped'].combine_first(mergeDf['Variation'])
 mergeDf['Image'] = mergeDf['Image_grouped'].combine_first(mergeDf['Image'])
+
 # Drop the intermediate columns used for grouping
 mergeDf.drop(['Variation_grouped', 'Image_grouped'], axis=1, inplace=True)
 # Remove duplicate rows while keeping consolidated lists
@@ -402,7 +400,7 @@ megaDf['HHP Source'].fillna("From player catalog after 27th home", inplace=True)
 
 # ================================================== Exporting finished dataset ==================================================
 
-print(megaDf[megaDf['Name']=='scenic painting'])
-megaDf.info()
+#print(megaDf[megaDf['Name']=='framed poster'])
+#megaDf.info()
 
 megaDf.to_csv("output/allitems.csv", index=False)
