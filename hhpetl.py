@@ -1,4 +1,10 @@
 # type: ignore[reportUndefinedVariable] (pylance doesn't recognize variables declared via globals()[varName])
+
+"""
+Script for extracting data from the ACNH Spreadsheet project and chibisnorlax's HHP spreadsheets, cleaning up erroneous data & filling in missing data, and
+formatting it for use in the web app
+"""
+
 import warnings
 import os, os.path
 import pandas as pd
@@ -7,15 +13,15 @@ import re
 # ignore pandas FutureWarning for now (will fix CoW issues for pandas 3.0 later)
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-# Function to print dictionaries w/ lists as values in a more concise and readable way
-def printDict(dic):
-	for key,value in dic.items():
-		print(key + ": " + ", ".join(value))
-
 # Pandas print options
 pd.set_option('display.max_rows', 0)
 pd.set_option('display.max_columns', 5)
 pd.set_option('display.width', 0)
+
+# Function to print dictionaries w/ lists as values in a more concise and readable way
+def printDict(dic):
+	for key,value in dic.items():
+		print(key + ": " + ", ".join(value))
 
 # ================================================== Import and fix villager & facility unlocks ==================================================
 
@@ -149,7 +155,7 @@ megaDf.loc[megaDf['Tab'] == 'posters' 'Tab'] = 'wallmounted'
 megaDf.loc[megaDf['Catalog'] == 'Not in catalog', 'Catalog'] = 'Promotion' # for some reason Sanrio, Mario, & Pocket Camp items say "not in catalog"
 megaDf['Catalog'].fillna("Not in catalog", inplace=True)
 
-# TODO: Remove 'NFS' in buy column to change data type to int
+# Remove 'NFS' in buy column to change data type to int
 megaDf.loc[megaDf['Buy'] == 'NFS', 'Buy'] = None
 megaDf['Buy'] = megaDf['Buy'].astype('Int64')
 megaDf['Sell'] = megaDf['Sell'].astype('Int64')
@@ -398,6 +404,31 @@ megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Sell'].isna()), 'HHP Source']
 # Fill in HHP sources aside from villagers/facilities
 megaDf['HHP Source'].fillna("From player catalog after 27th home", inplace=True)
 
+# ================================================== Organizing data in order of in-game catalog ==================================================
+
+# Statues in housewares/miscellaneous
+megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains(r"\b(?:ancient|mystic)\b")), 'Tab'] = 'miscellaneous'
+megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("statue")), 'Tab'] = 'housewares'
+# Paintings in housewares/wall-mounted
+megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("wild painting")), 'Tab'] = 'housewares'
+megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("painting")), 'Tab'] = 'wall-mounted'
+
+# Fencing, music, toolsgoods in Other
+megaDf.loc[(megaDf['Tab'] == 'fencing'), 'Tag'] = 'fencing'
+megaDf.loc[(megaDf['Tab'] == 'fencing'), 'Tab'] = 'other'
+megaDf.loc[(megaDf['Tab'] == 'music'), 'Tag'] = 'music'
+megaDf.loc[(megaDf['Tab'] == 'music'), 'Tab'] = 'other'
+megaDf.loc[(megaDf['Tab'] == 'toolsgoods'), 'Tag'] = 'toolsgoods'
+megaDf.loc[(megaDf['Tab'] == 'toolsgoods'), 'Tab'] = 'other'
+
+# posters in wall-mounted
+megaDf.loc[(megaDf['Tab'] == 'posters'), 'Tag'] = 'Posters'
+megaDf.loc[(megaDf['Tab'] == 'posters'), 'Tab'] = 'wallmounted'
+
+# specify tab order to match in-game
+megaDf['Tab'] = pd.Categorical(megaDf['Tab'], ['housewares','miscellaneous','wallmounted','ceilingdecor','wallpaper','floors','rugs','clothing','other'])
+megaDf.sort_values(['Tab','Tag','Name'],inplace=True)
+ 
 # ================================================== Exporting finished dataset ==================================================
 
 #print(megaDf[megaDf['Name']=='framed poster'])
