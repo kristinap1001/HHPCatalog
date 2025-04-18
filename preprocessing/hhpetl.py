@@ -9,6 +9,7 @@ import warnings
 import os, os.path
 import pandas as pd
 import re
+import json
 
 # ignore pandas FutureWarning for now (will fix CoW issues for pandas 3.0 later)
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -26,8 +27,8 @@ def printDict(dic):
 # ================================================== Import and fix villager & facility unlocks ==================================================
 
 # Import HHP furniture lists
-villagerUnlocks = pd.read_csv('hhp_data/furniture-per-villager.csv',dtype=object)
-facilityUnlocks = pd.read_csv('hhp_data/furniture-per-facility.csv',dtype=object)
+villagerUnlocks = pd.read_csv('preprocessing/hhp_data/furniture-per-villager.csv',dtype=object)
+facilityUnlocks = pd.read_csv('preprocessing/hhp_data/furniture-per-facility.csv',dtype=object)
 
 # typo in facilities csv
 facilityUnlocks['English Name (added)'].replace('tee with silicon bib', 'tee with silicone bib', inplace=True)
@@ -83,20 +84,20 @@ for vill,furnList in villToFurn.items():
 # ================================================== Importing ACNH data ==================================================
 
 # Rename csvs (only need to do once)
-for filename in os.listdir('acnh_data'):
+for filename in os.listdir('preprocessing/acnh_data'):
 	if filename.startswith('Data Spreadsheet'):
 		newName = filename[52:] # "Data Spreadsheet..." prefix is 52 characters long
 	else:
 		newName = filename
 	newName = newName.lower().replace(" ","")
-	os.rename('acnh_data/'+filename, 'acnh_data/'+newName)
+	os.rename('preprocessing/acnh_data/'+filename, 'preprocessing/acnh_data/'+newName)
 
 # Create dataframes
 varList = []
 dfList = []
-for filename in os.listdir('acnh_data'):
+for filename in os.listdir('preprocessing/acnh_data'):
 	varName = os.path.splitext(filename)[0] # removes '.csv'
-	data = pd.read_csv('acnh_data/'+filename,dtype=object)
+	data = pd.read_csv('preprocessing/acnh_data/'+filename,dtype=object)
 	globals()[varName] = data
 
 	# Add column with the category/"tab" name
@@ -434,4 +435,8 @@ megaDf.sort_values(['Tab','Tag','Name'],inplace=True)
 #print(megaDf[megaDf['Name']=='framed poster'])
 #megaDf.info()
 
-megaDf.to_csv("output/allitems.csv", index=False)
+# For viewing & searching in excel/google sheets
+megaDf.to_csv("preprocessing/output/allitems.csv", index=False)
+
+# For use in frontend
+megaDf.to_json("src/items.json",orient='records',force_ascii=False)
