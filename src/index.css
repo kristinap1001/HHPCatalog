@@ -1,68 +1,76 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --white: #fff9e5;
+  --brown: #766751;
+  --coral: #ff7c69;
+  --pink: #febdc3;
+  --dark-pink: #ef758a;
+  --light-yellow: #f8eebc;
+  --yellow: #fcea64;
+  --dark-yellow: #f5c24c;
+  --light-blue: #8ecfca;
+  --blue: #7cc8c3;
+  --dark-blue: #017c74;
+  --light-green: #a4d4a2;
+  --green: #88c9a1;
+  --dark-green: #68b893;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  font-family: "quicksand", sans-serif;
 }
 
-body {
-  margin: 0;
+.app {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.sidebar {
+  width: 20%;
+  min-height: 100%;
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 32px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.catalog {
+  width: 80%;
+  min-height: 100%;
+  background-color: var(--light-yellow);
+  color: var(--brown);
+  padding: 32px 64px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  row-gap: 20px;
+  column-gap: 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.card {
+  height: auto;
+  padding: 8px;
+  color: var(--brown);
+  background: var(--light-green);
+  border-radius: 12px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 84px;
+  height: 84px;
+  background-color: rgba(118, 103, 81, 0.5);
+  border-radius: 12px;
+  margin-bottom: 8px;
 }

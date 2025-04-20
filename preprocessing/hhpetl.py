@@ -233,6 +233,8 @@ mergeDf['Image'] = mergeDf['Image_grouped'].combine_first(mergeDf['Image'])
 mergeDf.drop(['Variation_grouped', 'Image_grouped'], axis=1, inplace=True)
 # Remove duplicate rows while keeping consolidated lists
 megaDf = mergeDf.drop_duplicates(subset=[col for col in mergeDf.columns if col not in ['Variation', 'Image']])
+# Remove duplicate simple wooden fence
+megaDf.drop(megaDf.index[(megaDf['Name'] == "simple wooden fence") & (megaDf['Source Notes'].isnull())], inplace=True)
 
 # ================================================ Adding "photo studio" items not in original acnh datasets ================================================
 
@@ -399,8 +401,9 @@ megaDf['HHP Source'] = megaDf['Name'].map(furnToVill)
 # print(missing) # bivalve (scallop), goldfish, killifish, crawfish
 # critter tables are outside the scope of this project (the vast majority aren't HHP unlockable)
 
-# Remove villager lists from fake artworks
+# Remove villager lists from fake artworks and add "Fake" to names
 megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Sell'].isna()), 'HHP Source'] = None
+megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Sell'].isna()), 'Name'] = megaDf['Name'] + ' (Fake)'
 
 # Fill in HHP sources aside from villagers/facilities
 megaDf['HHP Source'].fillna("From player catalog after 27th home", inplace=True)
