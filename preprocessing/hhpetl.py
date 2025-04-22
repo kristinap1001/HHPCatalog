@@ -1,8 +1,8 @@
 # type: ignore[reportUndefinedVariable] (pylance doesn't recognize variables declared via globals()[varName])
 
 """
-Script for extracting data from the ACNH Spreadsheet project and chibisnorlax's HHP spreadsheets, cleaning up erroneous data & filling in missing data, and
-formatting it for use in the web app
+Script for extracting data from the ACNH Spreadsheet project, chibisnorlax, and Stoney9215; cleaning up erroneous data & filling in 
+missing data; and formatting it for use in the web app
 """
 
 import warnings

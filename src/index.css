@@ -26,25 +26,93 @@
 
 .app {
   display: flex;
+  height: 100vh;
 }
 
-.sidebar {
-  width: 20%;
-  min-height: 100%;
-  background-color: var(--dark-green);
-  color: var(--white);
-  padding: 32px;
+h2 {
+  font-size: 48px;
 }
+
+/* -------------------------------------- Catalog Header -------------------------------------- */
 
 .catalog {
+  display: block;
   width: 80%;
-  min-height: 100%;
   background-color: var(--light-yellow);
   color: var(--brown);
   padding: 32px 64px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-search {
+  display: flex;
+  align-items: center;
+}
+
+.filter-search button {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--brown);
+}
+.filter-search button:active {
+  scale: 95%;
+}
+
+.filter-button {
+  margin-right: 12px;
+}
+.filter-button:hover {
+  color: var(--coral)
+}
+
+.search-button {
+  background-color: var(--yellow);
+  border-radius: 8px;
+}
+
+.search-button:hover {
+  background-color: var(--coral);
+  color: var(--white);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 400px;
+  height: 32px;
+  background-color: var(--white);
+  border-radius: 12px;
+}
+
+.search input {
+  height: 100%;
+  width: 360px;
+  font-size: 18px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: var(--brown);
+}
+
+.search input:focus {
+  outline: none;
+}
+
+/* -------------------------------------- Catalog Cards -------------------------------------- */
+
 .cards {
+  display: block;
+  height: calc(100% - 156px);
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
   row-gap: 20px;
@@ -52,19 +120,26 @@
   align-items: stretch;
   justify-content: space-between;
   margin: 20px auto;
+  overflow-y: scroll;
+  padding-right: 20px;
+  padding-bottom: 32px;
+  scrollbar-color: var(--white) var(--light-yellow);
 }
 
 .card {
   height: auto;
   padding: 8px;
-  color: var(--brown);
   background: var(--light-green);
   border-radius: 12px;
-  font-size: 11px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.card h4 {
+  color: var(--brown);
+  font-size: 11px;
 }
 
 .card img {
@@ -73,4 +148,93 @@
   background-color: rgba(118, 103, 81, 0.5);
   border-radius: 12px;
   margin-bottom: 8px;
+}
+
+/* -------------------------------------- Sidebar -------------------------------------- */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 32px;
+}
+
+.accordion-closed {
+  width: 100%;
+  margin-top: 20px;
+  height: 30px;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
+}
+.accordion-open {
+  width: 100%;
+  flex-grow: 1;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
+}
+
+.facilities {
+  display: flex;
+  height: fit-content;
+}
+.facilities .accordion-open {
+  overflow: none;
+}
+
+.villagers {
+  display: flex;
+  max-height: calc(100% - 400px);
+}
+
+.accordion-button {
+  background: none;
+  border: none;
+  color: var(--white);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.accordion-button h3 {
+  display: inline;
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.plus-minus {
+  display: inline-block;
+  width: 16px;
+  margin-right: 8px;
+}
+
+.accordion-list {
+  max-height: 100%;
+  padding-left: 24px;
+  scrollbar-color: var(--dark-green) var(--green);
+
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
+}
+
+.villagers .accordion-list {
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+.accordion-item {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
 }

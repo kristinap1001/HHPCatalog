@@ -1,0 +1,2893 @@
+[
+  {
+    "Name": "Ace",
+    "Filename": "brd09",
+    "Request": "The Fishin' Hole",
+    "Thought bubble": "I want a place where I can fish to my heart's content.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd09.png"
+  },
+  {
+    "Name": "Admiral",
+    "Filename": "brd06",
+    "Request": "Cool Country Cabin",
+    "Thought bubble": "I want a cool cabin where I can relax on hot days!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd06.png"
+  },
+  {
+    "Name": "Agent S",
+    "Filename": "squ05",
+    "Request": "Training Grounds for a Hero",
+    "Thought bubble": "Heroes train! It's what they do, even on vacation!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ05.png"
+  },
+  {
+    "Name": "Agnes",
+    "Filename": "pig17",
+    "Request": "The Artsiest Art Museum",
+    "Thought bubble": "I want a place that's like a museum with artsy furniture!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig17.png"
+  },
+  {
+    "Name": "Al",
+    "Filename": "gor08",
+    "Request": "Gymnastics School for Kids",
+    "Thought bubble": "My dream is to someday teach gymnastics to kids.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor08.png"
+  },
+  {
+    "Name": "Alfonso",
+    "Filename": "crd00",
+    "Request": "Castle Sky Cake",
+    "Thought bubble": "I want to float high in the sky, surrounded by cake...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd00.png"
+  },
+  {
+    "Name": "Alice",
+    "Filename": "kal01",
+    "Request": "An Antique Cottage",
+    "Thought bubble": "I want a taste of the refined lifestyle...with antique goods.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal01.png"
+  },
+  {
+    "Name": "Alli",
+    "Filename": "crd01",
+    "Request": "My Mushroom Forest",
+    "Thought bubble": "I want to relax in a forest surrounded by mushrooms.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd01.png"
+  },
+  {
+    "Name": "Amelia",
+    "Filename": "pbr01",
+    "Request": "Beloved Hanging Gardens",
+    "Thought bubble": "I want a place where my greenery can get lots of light.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr01.png"
+  },
+  {
+    "Name": "Anabelle",
+    "Filename": "ant03",
+    "Request": "Anabelle's Gathering Garden",
+    "Thought bubble": "I'd love a garden where all my friends can gather...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant03.png"
+  },
+  {
+    "Name": "Anchovy",
+    "Filename": "brd02",
+    "Request": "A Place Where They Sell Hats",
+    "Thought bubble": "If I had tons of hats, would it feel like a hat shop?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd02.png"
+  },
+  {
+    "Name": "Angus",
+    "Filename": "bul00",
+    "Request": "A Lighthouse Lifestyle",
+    "Thought bubble": "I think a vacation home with a lighthouse would be fun...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bul00.png"
+  },
+  {
+    "Name": "Anicotti",
+    "Filename": "mus10",
+    "Request": "Pizza-Party HQ",
+    "Thought bubble": "I want to have outdoor pizza parties with my friends!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus10.png"
+  },
+  {
+    "Name": "Ankha",
+    "Filename": "cat19",
+    "Request": "Ancient Oasis",
+    "Thought bubble": "I enjoy the elegance of the ancient world.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat19.png"
+  },
+  {
+    "Name": "Annalisa",
+    "Filename": "ant08",
+    "Request": "Secret Supper Club",
+    "Thought bubble": "I'd love an exclusive and secret supper club...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant08.png"
+  },
+  {
+    "Name": "Annalise",
+    "Filename": "hrs09",
+    "Request": "A Home with a Terrace",
+    "Thought bubble": "Terraces are wonderful. I simply must have one.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs09.png"
+  },
+  {
+    "Name": "Antonio",
+    "Filename": "ant01",
+    "Request": "A Simple Stronghold",
+    "Thought bubble": "Is it too much to ask for a simple stronghold?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant01.png"
+  },
+  {
+    "Name": "Apollo",
+    "Filename": "pbr00",
+    "Request": "A Home in the Rough",
+    "Thought bubble": "I like to go off the beaten path, to spots no one's seen.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr00.png"
+  },
+  {
+    "Name": "Apple",
+    "Filename": "ham01",
+    "Request": "My Own Apple Orchard",
+    "Thought bubble": "Wouldn't a home filled with yummy apples be totes cool?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham01.png"
+  },
+  {
+    "Name": "Astrid",
+    "Filename": "kgr05",
+    "Request": "Jam Space for the Band",
+    "Thought bubble": "I want all my friends to come over for band practice!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr05.png"
+  },
+  {
+    "Name": "Audie",
+    "Filename": "wol12",
+    "Request": "DJ Party Zone",
+    "Thought bubble": "I want a place where I can always be the DJ!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol12.png"
+  },
+  {
+    "Name": "Aurora",
+    "Filename": "pgn00",
+    "Request": "A Florist's Flower Shop",
+    "Thought bubble": "I love flower shops and all their pretty flowers...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn00.png"
+  },
+  {
+    "Name": "Ava",
+    "Filename": "chn05",
+    "Request": "My Gastronomy Garden",
+    "Thought bubble": "I'd like a vacation home for offering cooking lessons.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn05.png"
+  },
+  {
+    "Name": "Avery",
+    "Filename": "pbr05",
+    "Request": "Rocky Refuge",
+    "Thought bubble": "Being near lots of rocks might be nice. They're real quiet.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr05.png"
+  },
+  {
+    "Name": "Axel",
+    "Filename": "elp06",
+    "Request": "My Muscular Sweets Store",
+    "Thought bubble": "All I can think about is making really awesome sweets!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp06.png"
+  },
+  {
+    "Name": "Azalea",
+    "Filename": "rhn05",
+    "Request": "House of Green Furniture",
+    "Thought bubble": "I think green furniture is what I need to feel refreshed.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn05.png"
+  },
+  {
+    "Name": "Baabara",
+    "Filename": "shp01",
+    "Request": "Home for a Ballet Dancer",
+    "Thought bubble": "I'd like to dance gracefully in a home built like a stage.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp01.png"
+  },
+  {
+    "Name": "Bam",
+    "Filename": "der01",
+    "Request": "My Cooking Life",
+    "Thought bubble": "I want a place I can cook anything. Particularly rice!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der01.png"
+  },
+  {
+    "Name": "Bangle",
+    "Filename": "tig03",
+    "Request": "Animal-Stuff Abode",
+    "Thought bubble": "A shop all full of animal stuff would be the best!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig03.png"
+  },
+  {
+    "Name": "Barold",
+    "Filename": "cbr16",
+    "Request": "A Hot-Pot Potluck Place",
+    "Thought bubble": "I want a place with lots of pots for a hot-pot potluck!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr16.png"
+  },
+  {
+    "Name": "Bea",
+    "Filename": "dog10",
+    "Request": "My Own Garden Plot",
+    "Thought bubble": "I want a place to raise and care for my plants...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog10.png"
+  },
+  {
+    "Name": "Beardo",
+    "Filename": "bea13",
+    "Request": "A Proper English Garden",
+    "Thought bubble": "I want to enjoy a proper cup of tea in an English garden...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea13.png"
+  },
+  {
+    "Name": "Beau",
+    "Filename": "der07",
+    "Request": "My Own Personal Picnic Park",
+    "Thought bubble": "I wanna picnic inside and outside. Picnic everywhere!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der07.png"
+  },
+  {
+    "Name": "Becky",
+    "Filename": "chn09",
+    "Request": "A Place for Choir Practice",
+    "Thought bubble": "I want a place to practice with the choir group I'm forming.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn09.png"
+  },
+  {
+    "Name": "Bella",
+    "Filename": "mus02",
+    "Request": "My Voice-Training Studio",
+    "Thought bubble": "It's real important for me to keep up my voice training.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus02.png"
+  },
+  {
+    "Name": "Benedict",
+    "Filename": "chn01",
+    "Request": "A Space Station All to Myself",
+    "Thought bubble": "I wanna go on space walks in my own personal outer space.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn01.png"
+  },
+  {
+    "Name": "Benjamin",
+    "Filename": "dog16",
+    "Request": "A Restful, Rural Retreat",
+    "Thought bubble": "I want a rural escape that's as sleepy as I am...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog16.png"
+  },
+  {
+    "Name": "Bertha",
+    "Filename": "hip03",
+    "Request": "Bungalow of Cozy Baskets",
+    "Thought bubble": "I want a place filled with all sorts of warm, cozy baskets.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip03.png"
+  },
+  {
+    "Name": "Bettina",
+    "Filename": "mus15",
+    "Request": "A Peerless Patisserie",
+    "Thought bubble": "I want to make cakes as good as the best cake bakeries do.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus15.png"
+  },
+  {
+    "Name": "Bianca",
+    "Filename": "tig06",
+    "Request": "My Winter Wonderland",
+    "Thought bubble": "I grew up around snow, so I want a snowy vacation home!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig06.png"
+  },
+  {
+    "Name": "Biff",
+    "Filename": "hip04",
+    "Request": "Alien Cyborg Lab",
+    "Thought bubble": "I want a UFO to come build me a bigger, buffer bod.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip04.png"
+  },
+  {
+    "Name": "Big Top",
+    "Filename": "elp02",
+    "Request": "A Hero's Buffet",
+    "Thought bubble": "I want a place where I can make enough food for a hero.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp02.png"
+  },
+  {
+    "Name": "Bill",
+    "Filename": "duk00",
+    "Request": "My Old Summertime Shelter",
+    "Thought bubble": "I want every day to feel like I'm on a summer vacation!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk00.png"
+  },
+  {
+    "Name": "Billy",
+    "Filename": "goa02",
+    "Request": "A Place for Pottery",
+    "Thought bubble": "I want a place to make pottery around the clock!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa02.png"
+  },
+  {
+    "Name": "Biskit",
+    "Filename": "dog03",
+    "Request": "A Personal Park to Picnic In",
+    "Thought bubble": "It'd be fun to have a picnic in my very own park.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog03.png"
+  },
+  {
+    "Name": "Bitty",
+    "Filename": "hip05",
+    "Request": "My Fashion-Mag Office",
+    "Thought bubble": "I want somewhere to create a high-class fashion magazine.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip05.png"
+  },
+  {
+    "Name": "Blaire",
+    "Filename": "squ01",
+    "Request": "A Home with Fruit Flavor",
+    "Thought bubble": "Lemme stay at a place that's full of juicy, fresh fruit.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ01.png"
+  },
+  {
+    "Name": "Blanche",
+    "Filename": "ost08",
+    "Request": "A House That Looms Large",
+    "Thought bubble": "I'd like to be able to make fabulous cloth using a loom.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost08.png"
+  },
+  {
+    "Name": "Bluebear",
+    "Filename": "cbr00",
+    "Request": "A Sweet Candy Workshop",
+    "Thought bubble": "I need a place where I can prepare sweets and treats!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr00.png"
+  },
+  {
+    "Name": "Bob",
+    "Filename": "cat00",
+    "Request": "A Blooming Indoor Garden",
+    "Thought bubble": "I want a garden that's, like, IN my house. With flowers.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat00.png"
+  },
+  {
+    "Name": "Bonbon",
+    "Filename": "rbt17",
+    "Request": "Best House on the Block",
+    "Thought bubble": "I only want the very best house in the entire area!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt17.png"
+  },
+  {
+    "Name": "Bones",
+    "Filename": "dog04",
+    "Request": "A Pup's Playpen",
+    "Thought bubble": "I want a place to play just like when I was a little pup.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog04.png"
+  },
+  {
+    "Name": "Boomer",
+    "Filename": "pgn10",
+    "Request": "Classic Coffee Café",
+    "Thought bubble": "I want to sip coffee and admire retro appliances.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn10.png"
+  },
+  {
+    "Name": "Boone",
+    "Filename": "gor02",
+    "Request": "Dusty Desert Dwelling",
+    "Thought bubble": "I want to be reminded of the desert where I grew up...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor02.png"
+  },
+  {
+    "Name": "Boots",
+    "Filename": "crd02",
+    "Request": "A Peaceful Working Farm",
+    "Thought bubble": "I want a place to do my farm work in peace...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd02.png"
+  },
+  {
+    "Name": "Boris",
+    "Filename": "pig09",
+    "Request": "A Music Producer's Home",
+    "Thought bubble": "I want my own home studio to kick-start my music career!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig09.png"
+  },
+  {
+    "Name": "Boyd",
+    "Filename": "gor05",
+    "Request": "Heavy-Duty Safety Zone",
+    "Thought bubble": "I want to work with totally heavy equipment! Safely...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor05.png"
+  },
+  {
+    "Name": "Bree",
+    "Filename": "mus03",
+    "Request": "Toy Box from My Dreams",
+    "Thought bubble": "I once dreamt of a home filled with toys...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus03.png"
+  },
+  {
+    "Name": "Broccolo",
+    "Filename": "mus12",
+    "Request": "A Wheat-Harvest Home",
+    "Thought bubble": "What's better than bread? The wheat it came from!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus12.png"
+  },
+  {
+    "Name": "Broffina",
+    "Filename": "chn12",
+    "Request": "Anticipation Station",
+    "Thought bubble": "Let me stay in that moment of waiting for someone to arrive.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn12.png"
+  },
+  {
+    "Name": "Bruce",
+    "Filename": "der03",
+    "Request": "My Board-Game Palace",
+    "Thought bubble": "I want a place to play board games with my pals.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der03.png"
+  },
+  {
+    "Name": "Bubbles",
+    "Filename": "hip02",
+    "Request": "My Seaside Photo Studio",
+    "Thought bubble": "It'd be so fun to model for a seaside photo shoot!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip02.png"
+  },
+  {
+    "Name": "Buck",
+    "Filename": "hrs00",
+    "Request": "Locker-Room Lodge",
+    "Thought bubble": "You can't beat a postworkout shower in the locker room.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs00.png"
+  },
+  {
+    "Name": "Bud",
+    "Filename": "lon00",
+    "Request": "Seaside Sports Arena",
+    "Thought bubble": "I wanna play beach sports whenever I want!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon00.png"
+  },
+  {
+    "Name": "Bunnie",
+    "Filename": "rbt00",
+    "Request": "A Colorful Sewing Sanctuary",
+    "Thought bubble": "I want a sewing room for all the cute fabric I've collected!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt00.png"
+  },
+  {
+    "Name": "Butch",
+    "Filename": "dog01",
+    "Request": "A Dog Run for a Running Dog",
+    "Thought bubble": "I need a place where I can run around unleashed!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog01.png"
+  },
+  {
+    "Name": "Buzz",
+    "Filename": "pbr03",
+    "Request": "A Traditional Tea Shop",
+    "Thought bubble": "I want an old-fashioned place where I can enjoy tea.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr03.png"
+  },
+  {
+    "Name": "Cally",
+    "Filename": "squ11",
+    "Request": "A Home for Hanging Laundry",
+    "Thought bubble": "I need plenty of space inside and out for hanging laundry.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ11.png"
+  },
+  {
+    "Name": "Camofrog",
+    "Filename": "flg03",
+    "Request": "A Natural Getaway",
+    "Thought bubble": "I want a vacation home where I can be one with nature.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg03.png"
+  },
+  {
+    "Name": "Canberra",
+    "Filename": "kal08",
+    "Request": "International Eatery",
+    "Thought bubble": "I want to serve food from around the world...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal08.png"
+  },
+  {
+    "Name": "Candi",
+    "Filename": "mus08",
+    "Request": "My Crafty Cabin",
+    "Thought bubble": "I want time to just slip away while I relax with handicrafts!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus08.png"
+  },
+  {
+    "Name": "Carmen",
+    "Filename": "rbt16",
+    "Request": "Château d'Chocolate",
+    "Thought bubble": "I want a place to enjoy chocolate while on vacation.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt16.png"
+  },
+  {
+    "Name": "Caroline",
+    "Filename": "squ06",
+    "Request": "Dreamy Country-Ranch Home",
+    "Thought bubble": "I think I'd have a lovely time in a ranch-style home.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ06.png"
+  },
+  {
+    "Name": "Carrie",
+    "Filename": "kgr02",
+    "Request": "Green Space for My Child",
+    "Thought bubble": "I want to play with my child in a yard filled with green.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr02.png"
+  },
+  {
+    "Name": "Cashmere",
+    "Filename": "shp04",
+    "Request": "My Private Beach",
+    "Thought bubble": "It'd be awesome to hang out on my own private beach.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp04.png"
+  },
+  {
+    "Name": "Celia",
+    "Filename": "pbr09",
+    "Request": "A Refined Reading Residence",
+    "Thought bubble": "I want an elegant room for reading...elegantly.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr09.png"
+  },
+  {
+    "Name": "Cephalobot",
+    "Filename": "ocp04",
+    "Request": "My Other Home",
+    "Thought bubble": "I wanna relax in a place that reminds me of back home.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ocp04.png"
+  },
+  {
+    "Name": "Cesar",
+    "Filename": "gor00",
+    "Request": "A Half-Built House",
+    "Thought bubble": "I want a place that's not quite finished yet...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor00.png"
+  },
+  {
+    "Name": "Chabwick",
+    "Filename": "pgn07",
+    "Request": "Chabwick's Smokehouse",
+    "Thought bubble": "I want a place where I can smoke and BBQ my food...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn07.png"
+  },
+  {
+    "Name": "Chadder",
+    "Filename": "mus18",
+    "Request": "A Cheese-Maker's Château",
+    "Thought bubble": "Why buy cheese when you can make it yourself?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus18.png"
+  },
+  {
+    "Name": "Chai",
+    "Filename": "elp11",
+    "Request": "A Cute Space for Fluffy Stuff",
+    "Thought bubble": "I want to be surrounded by cute, fluffy things!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp11.png"
+  },
+  {
+    "Name": "Charlise",
+    "Filename": "bea12",
+    "Request": "The Greenest of Gardens",
+    "Thought bubble": "I love to, like, hang out while surrounded by greenery...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea12.png"
+  },
+  {
+    "Name": "Chelsea",
+    "Filename": "der10",
+    "Request": "My Own Fairy-Tale Forest",
+    "Thought bubble": "I want a wonderful stay in a cute, fairy-tale forest.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der10.png"
+  },
+  {
+    "Name": "Cheri",
+    "Filename": "cbr10",
+    "Request": "A Fruity-Smoothie Fort",
+    "Thought bubble": "I want a fun home perfect for making great fruit smoothies!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr10.png"
+  },
+  {
+    "Name": "Cherry",
+    "Filename": "dog17",
+    "Request": "A Runway for a Fashion Show",
+    "Thought bubble": "I want a place to host my own fashion shows!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog17.png"
+  },
+  {
+    "Name": "Chester",
+    "Filename": "cbr15",
+    "Request": "My Dream Bamboo Garden",
+    "Thought bubble": "I want to be surrounded by bamboo. It makes me sleepy!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr15.png"
+  },
+  {
+    "Name": "Chevre",
+    "Filename": "goa00",
+    "Request": "World's Safest Vault",
+    "Thought bubble": "I vow to protect the assets I've received from everyone!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa00.png"
+  },
+  {
+    "Name": "Chief",
+    "Filename": "wol00",
+    "Request": "Garage Space for My Pals",
+    "Thought bubble": "I want a garage space for enjoying hobbies with friends.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol00.png"
+  },
+  {
+    "Name": "Chops",
+    "Filename": "pig14",
+    "Request": "The Winner's Circle",
+    "Thought bubble": "I want to stay in a place designed for winners.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig14.png"
+  },
+  {
+    "Name": "Chow",
+    "Filename": "bea03",
+    "Request": "A Humble Life",
+    "Thought bubble": "I ain't asking for much—just a humble place to rest my head.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea03.png"
+  },
+  {
+    "Name": "Chrissy",
+    "Filename": "rbt13",
+    "Request": "Star-Model Showcase",
+    "Thought bubble": "My dream is to walk a runway in clothes made just for me!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt13.png"
+  },
+  {
+    "Name": "Claude",
+    "Filename": "rbt11",
+    "Request": "Home Game Hideaway",
+    "Thought bubble": "Every day would be so much fun if I had a home arcade!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt11.png"
+  },
+  {
+    "Name": "Claudia",
+    "Filename": "tig05",
+    "Request": "Vintage Jazz Café",
+    "Thought bubble": "I think the best part about going to a café is the music.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig05.png"
+  },
+  {
+    "Name": "Clay",
+    "Filename": "ham05",
+    "Request": "Clay's House of Chills",
+    "Thought bubble": "I want air conditioning, and scary stuff is \\\"chilling,\\\" so...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham05.png"
+  },
+  {
+    "Name": "Cleo",
+    "Filename": "hrs07",
+    "Request": "A Home Bathed in Elegance",
+    "Thought bubble": "I want the most luxurious, relaxing bathroom ever built.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs07.png"
+  },
+  {
+    "Name": "Clyde",
+    "Filename": "hrs10",
+    "Request": "Wood-Burning Bungalow",
+    "Thought bubble": "Warming up by a wood- burning stove is calming...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs10.png"
+  },
+  {
+    "Name": "Coach",
+    "Filename": "bul07",
+    "Request": "Track-Meet Training Grounds",
+    "Thought bubble": "You know what'd be fun? Rolling a giant ball around!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bul07.png"
+  },
+  {
+    "Name": "Cobb",
+    "Filename": "pig08",
+    "Request": "Secret Research Lab",
+    "Thought bubble": "I need a new lab to conduct my secret research...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig08.png"
+  },
+  {
+    "Name": "Coco",
+    "Filename": "rbt02",
+    "Request": "Coco-Style Retro Living",
+    "Thought bubble": "I think old-time living would suit me well.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt02.png"
+  },
+  {
+    "Name": "Cole",
+    "Filename": "rbt18",
+    "Request": "My Island Resort",
+    "Thought bubble": "I want my home and yard to have island resort vibes.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt18.png"
+  },
+  {
+    "Name": "Colton",
+    "Filename": "hrs11",
+    "Request": "House of Tea and Sweets",
+    "Thought bubble": "I want a place to host VIP tea parties with sweets.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs11.png"
+  },
+  {
+    "Name": "Cookie",
+    "Filename": "dog08",
+    "Request": "The Ultimate Pop-Star Café",
+    "Thought bubble": "I want a place to serve lunch AND do an a capella concert.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog08.png"
+  },
+  {
+    "Name": "Cousteau",
+    "Filename": "flg10",
+    "Request": "Family-Style Restaurant",
+    "Thought bubble": "I'm proud of the Chinese food I make, and I want to share it!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg10.png"
+  },
+  {
+    "Name": "Cranston",
+    "Filename": "ost06",
+    "Request": "A Nice Rice Paradise",
+    "Thought bubble": "I'm drooling thinking about a home filled with rice dishes.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost06.png"
+  },
+  {
+    "Name": "Croque",
+    "Filename": "flg17",
+    "Request": "Popular Ramen Restaurant",
+    "Thought bubble": "I wanna make the kind of ramen folks stand in line for.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg17.png"
+  },
+  {
+    "Name": "Cube",
+    "Filename": "pgn02",
+    "Request": "Eco-friendly Factory",
+    "Thought bubble": "An eco-friendly factory... That sounds kinda cool.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn02.png"
+  },
+  {
+    "Name": "Curlos",
+    "Filename": "shp08",
+    "Request": "House of Eternal Toy Day",
+    "Thought bubble": "I want to stay where it's like it's always Toy Day!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp08.png"
+  },
+  {
+    "Name": "Curly",
+    "Filename": "pig00",
+    "Request": "Game-Development Studio",
+    "Thought bubble": "I want to develop a video game and get rich quick!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig00.png"
+  },
+  {
+    "Name": "Curt",
+    "Filename": "bea02",
+    "Request": "A Painter's Retreat",
+    "Thought bubble": "I just wanna get away from it all and paint.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea02.png"
+  },
+  {
+    "Name": "Cyd",
+    "Filename": "elp12",
+    "Request": "My Streaming HQ",
+    "Thought bubble": "I gotta show everyone how good I am at playin' games!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp12.png"
+  },
+  {
+    "Name": "Cyrano",
+    "Filename": "ant00",
+    "Request": "Construction Job Site",
+    "Thought bubble": "I want my place to feel like a construction job site!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant00.png"
+  },
+  {
+    "Name": "Daisy",
+    "Filename": "dog07",
+    "Request": "Santa's Favorite House",
+    "Thought bubble": "It'd be great to have a place that Santa wants to visit!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog07.png"
+  },
+  {
+    "Name": "Deena",
+    "Filename": "duk04",
+    "Request": "The Old School Gym",
+    "Thought bubble": "I want a place that brings me back to my old school gym...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk04.png"
+  },
+  {
+    "Name": "Deirdre",
+    "Filename": "der04",
+    "Request": "A Little Slice of Fall",
+    "Thought bubble": "I wish I could be somewhere where it's fall all the time...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der04.png"
+  },
+  {
+    "Name": "Del",
+    "Filename": "crd04",
+    "Request": "A Cabin for My Sea Voyage",
+    "Thought bubble": "I wanna feel like I'm on a grand sea voyage all the time.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd04.png"
+  },
+  {
+    "Name": "Deli",
+    "Filename": "mnk08",
+    "Request": "Curry Kitchen",
+    "Thought bubble": "Ya know... I haven't had a good curry in a while.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk08.png"
+  },
+  {
+    "Name": "Derwin",
+    "Filename": "duk08",
+    "Request": "My Smart Study Space",
+    "Thought bubble": "I'm dreaming of a place where I'd actually WANT to study.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk08.png"
+  },
+  {
+    "Name": "Diana",
+    "Filename": "der08",
+    "Request": "A Place to Meditate",
+    "Thought bubble": "I desire a space where I can focus inward and meditate...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der08.png"
+  },
+  {
+    "Name": "Diva",
+    "Filename": "flg18",
+    "Request": "Island Power Spot",
+    "Thought bubble": "My place should be a power spot filled with mystic power!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg18.png"
+  },
+  {
+    "Name": "Dizzy",
+    "Filename": "elp01",
+    "Request": "A Fun Yard for Playing",
+    "Thought bubble": "I want places to play inside my home and out in my yard.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp01.png"
+  },
+  {
+    "Name": "Dobie",
+    "Filename": "wol04",
+    "Request": "The Author's Retreat",
+    "Thought bubble": "Maybe a trip to a hot spring will clear my writer's block!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol04.png"
+  },
+  {
+    "Name": "Doc",
+    "Filename": "rbt10",
+    "Request": "A Children's Library",
+    "Thought bubble": "I want to display and share my favorite picture books!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt10.png"
+  },
+  {
+    "Name": "Dom",
+    "Filename": "shp15",
+    "Request": "House of Gizmos",
+    "Thought bubble": "I want a place packed full of electronic gizmos.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp15.png"
+  },
+  {
+    "Name": "Dora",
+    "Filename": "mus00",
+    "Request": "A Serious Home Garden",
+    "Thought bubble": "I want to be self-sufficient with my own home garden.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus00.png"
+  },
+  {
+    "Name": "Dotty",
+    "Filename": "rbt01",
+    "Request": "A Fair Floral Greenhouse",
+    "Thought bubble": "I want to relax with blooming flowers and a sea of green...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt01.png"
+  },
+  {
+    "Name": "Drago",
+    "Filename": "crd08",
+    "Request": "My Lucky Lodgings",
+    "Thought bubble": "If my place is fulla lucky stuff, then nothing bad can happen!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd08.png"
+  },
+  {
+    "Name": "Drake",
+    "Filename": "duk09",
+    "Request": "Home of the Bread Refill",
+    "Thought bubble": "I want a place where they just keep bringing me bread.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk09.png"
+  },
+  {
+    "Name": "Drift",
+    "Filename": "flg04",
+    "Request": "A Vacation Home with a Well",
+    "Thought bubble": "Washing away sweat with cold well water sounds refreshing!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg04.png"
+  },
+  {
+    "Name": "Ed",
+    "Filename": "hrs06",
+    "Request": "Dinner-Party Central",
+    "Thought bubble": "I want a place to host my friends for dinner parties.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs06.png"
+  },
+  {
+    "Name": "Egbert",
+    "Filename": "chn02",
+    "Request": "A Niche Full of Numbers",
+    "Thought bubble": "Aren't the shapes of numbers cool? A huh huh huh...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn02.png"
+  },
+  {
+    "Name": "Elise",
+    "Filename": "mnk05",
+    "Request": "Spectacle Collector's Home",
+    "Thought bubble": "I collect stylish glasses, and I wish to show them off.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk05.png"
+  },
+  {
+    "Name": "Ellie",
+    "Filename": "elp07",
+    "Request": "A Sweet Space",
+    "Thought bubble": "I just want to be surrounded by sweets! Ahh...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp07.png"
+  },
+  {
+    "Name": "Elmer",
+    "Filename": "hrs03",
+    "Request": "A Bustling Sock Store",
+    "Thought bubble": "I want to display my favorite socks like they do in stores.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs03.png"
+  },
+  {
+    "Name": "Eloise",
+    "Filename": "elp03",
+    "Request": "My Relaxing Reading Room",
+    "Thought bubble": "I want a nice, quiet place where I can read in peace.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp03.png"
+  },
+  {
+    "Name": "Elvis",
+    "Filename": "lon01",
+    "Request": "Castle for a King",
+    "Thought bubble": "I just want to establish my own kingdom...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon01.png"
+  },
+  {
+    "Name": "Erik",
+    "Filename": "der09",
+    "Request": "A Hut in the Mountains",
+    "Thought bubble": "I see myself in a hut on a big mountain with fresh air...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der09.png"
+  },
+  {
+    "Name": "Étoile",
+    "Filename": "shp14",
+    "Request": "Home for Handicrafts",
+    "Thought bubble": "I want a home exclusively for working on handicrafts.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp14.png"
+  },
+  {
+    "Name": "Eugene",
+    "Filename": "kal10",
+    "Request": "A Place to Tell My Story",
+    "Thought bubble": "I want a relaxing space where I can talk about myself. A lot.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal10.png"
+  },
+  {
+    "Name": "Eunice",
+    "Filename": "shp02",
+    "Request": "Cozy Winter Cabin",
+    "Thought bubble": "I want a home that's toasty warm even in the winter.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp02.png"
+  },
+  {
+    "Name": "Faith",
+    "Filename": "kal07",
+    "Request": "Marching-Band HQ",
+    "Thought bubble": "I could play so many songs if I had a bunch of instruments!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal07.png"
+  },
+  {
+    "Name": "Fang",
+    "Filename": "wol06",
+    "Request": "Chic Chair Chalet",
+    "Thought bubble": "I'm sure I ain't the only one that loves a good chair shop!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol06.png"
+  },
+  {
+    "Name": "Fauna",
+    "Filename": "der00",
+    "Request": "My Piano Hangout",
+    "Thought bubble": "I want to entertain friends with my piano stylings.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der00.png"
+  },
+  {
+    "Name": "Felicity",
+    "Filename": "cat17",
+    "Request": "Felicity's Talk Show",
+    "Thought bubble": "I want a place that's like the set of a talk show...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat17.png"
+  },
+  {
+    "Name": "Filbert",
+    "Filename": "squ02",
+    "Request": "Driver's Ed. Study Lounge",
+    "Thought bubble": "I could get more practice if I lived with cool vehicle stuff.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ02.png"
+  },
+  {
+    "Name": "Flip",
+    "Filename": "mnk06",
+    "Request": "A Relaxing Spa",
+    "Thought bubble": "I want a place where folks can relax in a spa.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk06.png"
+  },
+  {
+    "Name": "Flo",
+    "Filename": "pgn13",
+    "Request": "A Guitarist's Home",
+    "Thought bubble": "I need a place that's rockin' for a guitarist like me.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn13.png"
+  },
+  {
+    "Name": "Flora",
+    "Filename": "ost09",
+    "Request": "A Fortress As Flush as Flora",
+    "Thought bubble": "If it's in my home, then it better be pink! Oh yeah!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost09.png"
+  },
+  {
+    "Name": "Flurry",
+    "Filename": "ham06",
+    "Request": "Flurry's House of Flurries",
+    "Thought bubble": "I want a place filled with furniture white as snow...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham06.png"
+  },
+  {
+    "Name": "Francine",
+    "Filename": "rbt12",
+    "Request": "Home for a Classy Designer",
+    "Thought bubble": "I want a classy place to design outfits for my friend.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt12.png"
+  },
+  {
+    "Name": "Frank",
+    "Filename": "pbr06",
+    "Request": "My High-Up Home",
+    "Thought bubble": "There's nothing better than being up in the tall heights.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr06.png"
+  },
+  {
+    "Name": "Freckles",
+    "Filename": "duk07",
+    "Request": "An Underwater Utopia",
+    "Thought bubble": "It'd be so cool to feel like I'm under the sea like a little fish!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk07.png"
+  },
+  {
+    "Name": "Frett",
+    "Filename": "dog11",
+    "Request": "A Sports Fan's Dugout",
+    "Thought bubble": "I want a place to watch sports without any distractions.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog11.png"
+  },
+  {
+    "Name": "Freya",
+    "Filename": "wol05",
+    "Request": "A Pro Chef's Kitchen",
+    "Thought bubble": "I want to make authentic food in a pro-level kitchen.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol05.png"
+  },
+  {
+    "Name": "Friga",
+    "Filename": "pgn04",
+    "Request": "A Movie-Projection Palace",
+    "Thought bubble": "A giant projection screen for movies would be amazing...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn04.png"
+  },
+  {
+    "Name": "Frita",
+    "Filename": "shp11",
+    "Request": "My Fast-Food Restaurant",
+    "Thought bubble": "I'd like somewhere I can get fast food with my buds.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp11.png"
+  },
+  {
+    "Name": "Frobert",
+    "Filename": "flg02",
+    "Request": "A Backflip Bungalow",
+    "Thought bubble": "I wanna watch things flip and rotate to work on MY flips!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg02.png"
+  },
+  {
+    "Name": "Fuchsia",
+    "Filename": "der06",
+    "Request": "My Manor of Mischief",
+    "Thought bubble": "I want a place that reminds me of when I was a rebel.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der06.png"
+  },
+  {
+    "Name": "Gabi",
+    "Filename": "rbt05",
+    "Request": "A Place with a Piano",
+    "Thought bubble": "I want a place where I can work on my piano playing.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt05.png"
+  },
+  {
+    "Name": "Gala",
+    "Filename": "pig13",
+    "Request": "A Bank for Everyone",
+    "Thought bubble": "I feel like it'd be fun to stay in a bank and protect its assets.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig13.png"
+  },
+  {
+    "Name": "Gaston",
+    "Filename": "rbt04",
+    "Request": "The Local Doctor's Office",
+    "Thought bubble": "I wanna feel like I'm the doc everyone goes to see.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt04.png"
+  },
+  {
+    "Name": "Gayle",
+    "Filename": "crd07",
+    "Request": "My Home on the Prairie",
+    "Thought bubble": "I want a place where I can feel the prairie winds...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd07.png"
+  },
+  {
+    "Name": "Genji",
+    "Filename": "rbt08",
+    "Request": "A Place to Play Go",
+    "Thought bubble": "I just wanna spend all day playing on a go board...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt08.png"
+  },
+  {
+    "Name": "Gigi",
+    "Filename": "flg16",
+    "Request": "An Actress's Greenroom",
+    "Thought bubble": "I could be stage ready at any time with my own greenroom.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg16.png"
+  },
+  {
+    "Name": "Gladys",
+    "Filename": "ost01",
+    "Request": "Refined Japanese Garden",
+    "Thought bubble": "I could stare out at a peaceful Japanese garden all day...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost01.png"
+  },
+  {
+    "Name": "Gloria",
+    "Filename": "duk15",
+    "Request": "A Stylish but Functional Spot",
+    "Thought bubble": "I want the furniture to be stylish and functional.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk15.png"
+  },
+  {
+    "Name": "Goldie",
+    "Filename": "dog00",
+    "Request": "A Real Chef's Château",
+    "Thought bubble": "I could cook up a storm in a fancy kitchen on my days off.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog00.png"
+  },
+  {
+    "Name": "Gonzo",
+    "Filename": "kal04",
+    "Request": "Campground for Glamping",
+    "Thought bubble": "I want to camp all fancy-like. They call it glamping!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal04.png"
+  },
+  {
+    "Name": "Goose",
+    "Filename": "chn00",
+    "Request": "My Wake-Up Waypoint",
+    "Thought bubble": "I need a place where I can work out when I wake up!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn00.png"
+  },
+  {
+    "Name": "Graham",
+    "Filename": "ham02",
+    "Request": "Office for a Venture Capitalist",
+    "Thought bubble": "I need a place where I can focus on my career.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham02.png"
+  },
+  {
+    "Name": "Greta",
+    "Filename": "mus16",
+    "Request": "An Inn with a Hot Spring",
+    "Thought bubble": "I just want the basics. An inn complete with a hot spring.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus16.png"
+  },
+  {
+    "Name": "Grizzly",
+    "Filename": "bea09",
+    "Request": "A Magnificent Mansion",
+    "Thought bubble": "Gimme a fancy place filled with stuff rich folks like!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea09.png"
+  },
+  {
+    "Name": "Groucho",
+    "Filename": "bea06",
+    "Request": "A Real Farmer's Farm",
+    "Thought bubble": "I wanna relax on a farm that's designed for real farmers!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea06.png"
+  },
+  {
+    "Name": "Gruff",
+    "Filename": "goa04",
+    "Request": "House of Horrors",
+    "Thought bubble": "I want a place to film scary movies that are really scary!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa04.png"
+  },
+  {
+    "Name": "Gwen",
+    "Filename": "pgn05",
+    "Request": "A Trendy Spa",
+    "Thought bubble": "I've always wanted to open the hottest salon around...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn05.png"
+  },
+  {
+    "Name": "Hamlet",
+    "Filename": "ham00",
+    "Request": "My Own Soccer Field",
+    "Thought bubble": "I want to spend every day focused on soccer!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham00.png"
+  },
+  {
+    "Name": "Hamphrey",
+    "Filename": "ham07",
+    "Request": "A Smoky Room",
+    "Thought bubble": "I'd like to relax in a place with a rich, smoky aroma. Mmm!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham07.png"
+  },
+  {
+    "Name": "Hans",
+    "Filename": "gor10",
+    "Request": "My Personal Ski Slope",
+    "Thought bubble": "It'd be great to have a whole ski slope all to myself.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor10.png"
+  },
+  {
+    "Name": "Harry",
+    "Filename": "hip08",
+    "Request": "My Messy Manor",
+    "Thought bubble": "Gimme a place where I can be as messy as I wanna be!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip08.png"
+  },
+  {
+    "Name": "Hazel",
+    "Filename": "squ18",
+    "Request": "Comic Artist's Workplace",
+    "Thought bubble": "I want the perfect place to work on drawing cartoons...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ18.png"
+  },
+  {
+    "Name": "Henry",
+    "Filename": "flg19",
+    "Request": "A Voyage of Self-Discovery",
+    "Thought bubble": "I want to find myself. But also have nice scenery...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg19.png"
+  },
+  {
+    "Name": "Hippeux",
+    "Filename": "hip09",
+    "Request": "Legendary Art Studio",
+    "Thought bubble": "I must have an art studio worthy of my masterpieces.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip09.png"
+  },
+  {
+    "Name": "Hopkins",
+    "Filename": "rbt14",
+    "Request": "Bouncy Balloon Bungalow",
+    "Thought bubble": "I want a place where I can be with all of my balloons.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt14.png"
+  },
+  {
+    "Name": "Hopper",
+    "Filename": "pgn03",
+    "Request": "A Lifeguard's Lodgings",
+    "Thought bubble": "Swimming safety is important, so I'd like to be a lifeguard.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn03.png"
+  },
+  {
+    "Name": "Hornsby",
+    "Filename": "rhn04",
+    "Request": "Gateway to the Sky",
+    "Thought bubble": "I want to feel like I could take off into the sky at any time...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn04.png"
+  },
+  {
+    "Name": "Huck",
+    "Filename": "flg11",
+    "Request": "Huck's Adventure Camp",
+    "Thought bubble": "I want a place that's exciting and weird for adventures!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg11.png"
+  },
+  {
+    "Name": "Hugh",
+    "Filename": "pig03",
+    "Request": "A Place to Sleep and Eat",
+    "Thought bubble": "I just want a place to eat lots, then nap on a futon.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig03.png"
+  },
+  {
+    "Name": "Iggly",
+    "Filename": "pgn11",
+    "Request": "Elite Cooling Station",
+    "Thought bubble": "I need a place to ice down after super-hot workouts.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn11.png"
+  },
+  {
+    "Name": "Ike",
+    "Filename": "bea11",
+    "Request": "Retro Ice-Cream Shop",
+    "Thought bubble": "I want an ice-cream shop that reminds me of bein' a kid.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea11.png"
+  },
+  {
+    "Name": "Ione",
+    "Filename": "squ21",
+    "Request": "A Diva's Dwelling",
+    "Thought bubble": "I want an upscale place where I can pretend I'm a diva.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ21.png"
+  },
+  {
+    "Name": "Jacob",
+    "Filename": "brd11",
+    "Request": "Inventor's Workshop",
+    "Thought bubble": "I need a place where I can invent stuff!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd11.png"
+  },
+  {
+    "Name": "Jacques",
+    "Filename": "brd16",
+    "Request": "The Most Exclusive Club",
+    "Thought bubble": "I want an exclusive club that only plays my playlists.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd16.png"
+  },
+  {
+    "Name": "Jambette",
+    "Filename": "flg13",
+    "Request": "My Beauty-School Dream",
+    "Thought bubble": "I want to offer makeup classes to everyone!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg13.png"
+  },
+  {
+    "Name": "Jay",
+    "Filename": "brd00",
+    "Request": "A Street for Sports",
+    "Thought bubble": "I'm dreaming of a private street for street sports!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd00.png"
+  },
+  {
+    "Name": "Jeremiah",
+    "Filename": "flg07",
+    "Request": "House of Nap",
+    "Thought bubble": "It'd be nice if I had a place to nap whenever I feel tired.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg07.png"
+  },
+  {
+    "Name": "Jitters",
+    "Filename": "brd04",
+    "Request": "A Futsal Fortress",
+    "Thought bubble": "I need a place to train and dominate in futsal!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd04.png"
+  },
+  {
+    "Name": "Joey",
+    "Filename": "duk01",
+    "Request": "A Café That's Also a Spa",
+    "Thought bubble": "Ever had an iced latte while taking a bath? It's the best!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk01.png"
+  },
+  {
+    "Name": "Judy",
+    "Filename": "cbr19",
+    "Request": "Judy's Recital Hall",
+    "Thought bubble": "I want a place where my singing voice can echo!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr19.png"
+  },
+  {
+    "Name": "Julia",
+    "Filename": "ost05",
+    "Request": "A Place to Enjoy My Guitar",
+    "Thought bubble": "I just want somewhere to hum and strum on my guitar.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost05.png"
+  },
+  {
+    "Name": "Julian",
+    "Filename": "hrs13",
+    "Request": "Cloud-Nine Chalet",
+    "Thought bubble": "I want a home that feels like it's floating in the sky...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs13.png"
+  },
+  {
+    "Name": "June",
+    "Filename": "cbr13",
+    "Request": "My Very Own Pharmacy",
+    "Thought bubble": "I want a place where I can focus on others' health!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr13.png"
+  },
+  {
+    "Name": "Kabuki",
+    "Filename": "cat09",
+    "Request": "An Authentic Art Museum",
+    "Thought bubble": "I want a place like a museum, filled with authentic art.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat09.png"
+  },
+  {
+    "Name": "Katt",
+    "Filename": "cat21",
+    "Request": "A Rockin' Amphitheater",
+    "Thought bubble": "I want my own rockin' amphitheater for music!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat21.png"
+  },
+  {
+    "Name": "Keaton",
+    "Filename": "pbr08",
+    "Request": "My Beachside Café",
+    "Thought bubble": "How fabulous would breakfast be if it were by the sea?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr08.png"
+  },
+  {
+    "Name": "Ken",
+    "Filename": "chn13",
+    "Request": "A Dojo for Ninjas and Samurai",
+    "Thought bubble": "I want a home that shows off how cool samurai are!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn13.png"
+  },
+  {
+    "Name": "Ketchup",
+    "Filename": "duk13",
+    "Request": "Tomato Paradise",
+    "Thought bubble": "Dishes made with tomatoes I grew would be SO amazing!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk13.png"
+  },
+  {
+    "Name": "Kevin",
+    "Filename": "pig15",
+    "Request": "Planet Peace Force HQ",
+    "Thought bubble": "I want a place where I can visualize piloting a spaceship!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig15.png"
+  },
+  {
+    "Name": "Kid Cat",
+    "Filename": "cat10",
+    "Request": "A Hero's Secret Base",
+    "Thought bubble": "I'm a hero, so I need a secret base, right?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat10.png"
+  },
+  {
+    "Name": "Kidd",
+    "Filename": "goa07",
+    "Request": "Pro Photo Studio",
+    "Thought bubble": "I'll need the ultimate studio to capture perfect photos.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa07.png"
+  },
+  {
+    "Name": "Kiki",
+    "Filename": "cat04",
+    "Request": "My Seafood Snack Bar",
+    "Thought bubble": "I've always wanted to be the chef at a seafood restaurant.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat04.png"
+  },
+  {
+    "Name": "Kitt",
+    "Filename": "kgr00",
+    "Request": "A Home Full of Appliances",
+    "Thought bubble": "I want all the conveniences. Fill my place with appliances!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr00.png"
+  },
+  {
+    "Name": "Kitty",
+    "Filename": "cat14",
+    "Request": "An Open-Air Café",
+    "Thought bubble": "I want to relax in an elegant, outdoor café...but indoors!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat14.png"
+  },
+  {
+    "Name": "Klaus",
+    "Filename": "bea14",
+    "Request": "A Life in Antiquity",
+    "Thought bubble": "Sometimes I want to go back to an ancient, classical era...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea14.png"
+  },
+  {
+    "Name": "Knox",
+    "Filename": "chn11",
+    "Request": "Castle of the Noble Knight",
+    "Thought bubble": "I vow to be an upstanding knight no matter where I am.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn11.png"
+  },
+  {
+    "Name": "Kody",
+    "Filename": "cbr04",
+    "Request": "A Blue Bodybuilding Base",
+    "Thought bubble": "I want a place to train, and I prefer blue gym equipment!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr04.png"
+  },
+  {
+    "Name": "Kyle",
+    "Filename": "wol10",
+    "Request": "A Home with Cool Lighting",
+    "Thought bubble": "I want a place to show off my exquisite lighting collection.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol10.png"
+  },
+  {
+    "Name": "Leonardo",
+    "Filename": "tig04",
+    "Request": "Sports Star's Field House",
+    "Thought bubble": "I want a place for a field-day superstar like me!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig04.png"
+  },
+  {
+    "Name": "Leopold",
+    "Filename": "lon04",
+    "Request": "Camper's Paradise",
+    "Thought bubble": "I want to be in a place where I can set up camp for a bit...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon04.png"
+  },
+  {
+    "Name": "Lily",
+    "Filename": "flg00",
+    "Request": "A Calm Clearing in Nature",
+    "Thought bubble": "I want a place good for soul, filled with nature's bounty!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg00.png"
+  },
+  {
+    "Name": "Limberg",
+    "Filename": "mus01",
+    "Request": "A Self-Sufficient Homestead",
+    "Thought bubble": "I think I should make all of the food I want to eat.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus01.png"
+  },
+  {
+    "Name": "Lionel",
+    "Filename": "lon08",
+    "Request": "Restroom Refuge",
+    "Thought bubble": "You can never have too many toilets when company's over.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon08.png"
+  },
+  {
+    "Name": "Lobo",
+    "Filename": "wol01",
+    "Request": "A Retro Residence",
+    "Thought bubble": "I could see surrounding myself with cool retro stuff.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol01.png"
+  },
+  {
+    "Name": "Lolly",
+    "Filename": "cat18",
+    "Request": "An Emcee's Training Grounds",
+    "Thought bubble": "I'd like a place to practice my public speaking.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat18.png"
+  },
+  {
+    "Name": "Lopez",
+    "Filename": "der05",
+    "Request": "My Piece of the Big City",
+    "Thought bubble": "It's gotta have that big-city- apartment feel for me...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der05.png"
+  },
+  {
+    "Name": "Louie",
+    "Filename": "gor04",
+    "Request": "An Actual Jungle Gym",
+    "Thought bubble": "I want to work out in nature, like in an actual jungle!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor04.png"
+  },
+  {
+    "Name": "Lucha",
+    "Filename": "brd15",
+    "Request": "A Real Wrestling Ring",
+    "Thought bubble": "I want a wrestling ring so I can host dramatic matches!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd15.png"
+  },
+  {
+    "Name": "Lucky",
+    "Filename": "dog02",
+    "Request": "The Cradle of Civilization",
+    "Thought bubble": "I want to sleep in crumbling old ruins that time forgot!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog02.png"
+  },
+  {
+    "Name": "Lucy",
+    "Filename": "pig04",
+    "Request": "Doll Manor",
+    "Thought bubble": "I want to be surrounded by dolls! I love them so much!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig04.png"
+  },
+  {
+    "Name": "Lyman",
+    "Filename": "kal09",
+    "Request": "A Variety of Veggies",
+    "Thought bubble": "The best way to bulk up these muscles? Lots of veggies!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal09.png"
+  },
+  {
+    "Name": "Mac",
+    "Filename": "dog14",
+    "Request": "Camp Mac",
+    "Thought bubble": "I want to feel like I'm camping at my own place!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog14.png"
+  },
+  {
+    "Name": "Maddie",
+    "Filename": "dog09",
+    "Request": "Stylish Streamer Estate",
+    "Thought bubble": "I want my own studio to stream my awesomeness!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog09.png"
+  },
+  {
+    "Name": "Maelle",
+    "Filename": "duk03",
+    "Request": "A Boutique for My Top Brands",
+    "Thought bubble": "I'd adore a boutique to show off my taste in luxury brands.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk03.png"
+  },
+  {
+    "Name": "Maggie",
+    "Filename": "pig10",
+    "Request": "Garden of Regeneration",
+    "Thought bubble": "I want to grow a lovely garden to create a restorative space.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig10.png"
+  },
+  {
+    "Name": "Mallary",
+    "Filename": "duk06",
+    "Request": "Relaxing Hot-Spring Resort",
+    "Thought bubble": "I want a luxury home with its own hot spring. Nothing less.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk06.png"
+  },
+  {
+    "Name": "Maple",
+    "Filename": "cbr01",
+    "Request": "A Bountiful Bear Bungalow",
+    "Thought bubble": "I think a home with lots of plush bears would be so fun.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr01.png"
+  },
+  {
+    "Name": "Marcel",
+    "Filename": "dog15",
+    "Request": "Luxury Bathroom with a View",
+    "Thought bubble": "I want a bathroom with a view of a pretty yard.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog15.png"
+  },
+  {
+    "Name": "Marcie",
+    "Filename": "kgr10",
+    "Request": "A Homey Daycare Dwelling",
+    "Thought bubble": "I bet my neighbors would appreciate a daycare nearby...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr10.png"
+  },
+  {
+    "Name": "Margie",
+    "Filename": "elp04",
+    "Request": "A Very Fancy Boutique",
+    "Thought bubble": "A shop with tons of fancy clothes would be so dreamy.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp04.png"
+  },
+  {
+    "Name": "Marina",
+    "Filename": "ocp01",
+    "Request": "Marina's Underwater Palace",
+    "Thought bubble": "There's something wonderful about being beneath the sea.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ocp01.png"
+  },
+  {
+    "Name": "Marlo",
+    "Filename": "ham09",
+    "Request": "A Movie-Star Mansion",
+    "Thought bubble": "I wanna pretend I'm one of those big, fancy movie stars.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham09.png"
+  },
+  {
+    "Name": "Marshal",
+    "Filename": "squ17",
+    "Request": "Retro Café Cabin",
+    "Thought bubble": "Can anything beat a good cup at the café? The answer is no.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ17.png"
+  },
+  {
+    "Name": "Marty",
+    "Filename": "cbr18",
+    "Request": "Come-and-Go Calorie Castle",
+    "Thought bubble": "I want a place to eat and then immediately start sweating.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr18.png"
+  },
+  {
+    "Name": "Mathilda",
+    "Filename": "kgr01",
+    "Request": "An Eco-friendly Environment",
+    "Thought bubble": "I want my family to stay in harmony with nature.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr01.png"
+  },
+  {
+    "Name": "Megan",
+    "Filename": "bea15",
+    "Request": "A Place for Dreamy Thrills",
+    "Thought bubble": "I'd be thrilled with a dreamy style full of pastel colors!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea15.png"
+  },
+  {
+    "Name": "Melba",
+    "Filename": "kal02",
+    "Request": "Fairy-Tale World",
+    "Thought bubble": "I want my home to feel like it's in a fairy tale.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal02.png"
+  },
+  {
+    "Name": "Merengue",
+    "Filename": "rhn07",
+    "Request": "Dessert R & D Dept.",
+    "Thought bubble": "I want a place to invent delicious everyday desserts!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn07.png"
+  },
+  {
+    "Name": "Merry",
+    "Filename": "cat16",
+    "Request": "A Spot to Model Myself",
+    "Thought bubble": "I want my own studio where I model for an artist!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat16.png"
+  },
+  {
+    "Name": "Midge",
+    "Filename": "brd08",
+    "Request": "Midge's Beauty Barn",
+    "Thought bubble": "I want a home like a salon so I can share the beauty!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd08.png"
+  },
+  {
+    "Name": "Mint",
+    "Filename": "squ09",
+    "Request": "The Ice-Cream Shoppe",
+    "Thought bubble": "To me, joy is the colorful ice cream you see at a shoppe.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ09.png"
+  },
+  {
+    "Name": "Mira",
+    "Filename": "rbt19",
+    "Request": "My Cutting-Edge Keep",
+    "Thought bubble": "I want a futuristic place. But not, like, TOO futuristic.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt19.png"
+  },
+  {
+    "Name": "Miranda",
+    "Filename": "duk12",
+    "Request": "An Elite Cross-Training Gym",
+    "Thought bubble": "I must have a well-equipped gym for a variety of workouts.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk12.png"
+  },
+  {
+    "Name": "Mitzi",
+    "Filename": "cat01",
+    "Request": "Mitzi's Mountaintop Eatery",
+    "Thought bubble": "A mountaintop restaurant with Japanese food...yum!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat01.png"
+  },
+  {
+    "Name": "Moe",
+    "Filename": "cat08",
+    "Request": "A Magician's Mystery Manor",
+    "Thought bubble": "I want a place to work on my mysterious magic act!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat08.png"
+  },
+  {
+    "Name": "Molly",
+    "Filename": "duk16",
+    "Request": "A Tiny Publishing House",
+    "Thought bubble": "I've always wanted to run my own publishing house...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk16.png"
+  },
+  {
+    "Name": "Monique",
+    "Filename": "cat11",
+    "Request": "An Elegant Euro Pied-à-Terre",
+    "Thought bubble": "It simply must be full of European elegance.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat11.png"
+  },
+  {
+    "Name": "Monty",
+    "Filename": "mnk04",
+    "Request": "Mystery-Solver Club",
+    "Thought bubble": "I want a place where I can investigate cool mysteries!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk04.png"
+  },
+  {
+    "Name": "Moose",
+    "Filename": "mus14",
+    "Request": "Home with a Hoop",
+    "Thought bubble": "I want a place with a b-ball hoop so I can always play!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus14.png"
+  },
+  {
+    "Name": "Mott",
+    "Filename": "lon06",
+    "Request": "A Physicist's Home",
+    "Thought bubble": "I want to research the physics of muscle building.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon06.png"
+  },
+  {
+    "Name": "Muffy",
+    "Filename": "shp12",
+    "Request": "Renaissance Manor",
+    "Thought bubble": "I'd like to spend my time in a gorgeous, old manor.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp12.png"
+  },
+  {
+    "Name": "Murphy",
+    "Filename": "cbr07",
+    "Request": "Small-Town Factory",
+    "Thought bubble": "It'd be kinda cool to run a little factory in a small town.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr07.png"
+  },
+  {
+    "Name": "Nan",
+    "Filename": "goa01",
+    "Request": "A Luxury Hotel",
+    "Thought bubble": "I want that relaxing, refined hotel-style feeling for myself.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa01.png"
+  },
+  {
+    "Name": "Nana",
+    "Filename": "mnk01",
+    "Request": "A Park for the Peckish",
+    "Thought bubble": "I want a relaxing park where I can eat lunch...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk01.png"
+  },
+  {
+    "Name": "Naomi",
+    "Filename": "cow07",
+    "Request": "The Art Café",
+    "Thought bubble": "I would adore my own sad café, filled with sad art...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cow07.png"
+  },
+  {
+    "Name": "Nate",
+    "Filename": "bea05",
+    "Request": "House of Cardboard",
+    "Thought bubble": "I could see a really cool fort filled with cardboard stuff!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea05.png"
+  },
+  {
+    "Name": "Nibbles",
+    "Filename": "squ04",
+    "Request": "Nibbles's Study Space",
+    "Thought bubble": "Could a room ever motivate me to study? I don't know.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ04.png"
+  },
+  {
+    "Name": "Norma",
+    "Filename": "cow06",
+    "Request": "A Place Packed with Plants",
+    "Thought bubble": "It'd be dreamy to read quietly in a room filled with plants...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cow06.png"
+  },
+  {
+    "Name": "O'Hare",
+    "Filename": "rbt15",
+    "Request": "Tropical Paradise",
+    "Thought bubble": "An indoor tropical island would be pretty awesome.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt15.png"
+  },
+  {
+    "Name": "Octavian",
+    "Filename": "ocp00",
+    "Request": "A Window to the Sea",
+    "Thought bubble": "I wanna relax by the sea and drink in that nostalgia...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ocp00.png"
+  },
+  {
+    "Name": "Olaf",
+    "Filename": "ant09",
+    "Request": "A Stellar Estate",
+    "Thought bubble": "I'd like to sleep under a top- tier view of the night sky.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant09.png"
+  },
+  {
+    "Name": "Olive",
+    "Filename": "cbr09",
+    "Request": "My Everyday Ice-Cream Parlor",
+    "Thought bubble": "I want a place where I can make ice cream for everyone!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr09.png"
+  },
+  {
+    "Name": "Olivia",
+    "Filename": "cat03",
+    "Request": "Portal to the Land of Nod",
+    "Thought bubble": "I want a bedroom where I can fall into the deepest sleep...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat03.png"
+  },
+  {
+    "Name": "Opal",
+    "Filename": "elp00",
+    "Request": "Garden of Serenity",
+    "Thought bubble": "I want to stay at a serene resort with a fragrant aroma.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp00.png"
+  },
+  {
+    "Name": "Ozzie",
+    "Filename": "kal05",
+    "Request": "Health Examination Station",
+    "Thought bubble": "I just think I'd feel safe and cozy in a school's infirmary.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal05.png"
+  },
+  {
+    "Name": "Pancetti",
+    "Filename": "pig16",
+    "Request": "A Place for the Best Rest",
+    "Thought bubble": "I want to sleep surrounded by the sweet scent of nature.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig16.png"
+  },
+  {
+    "Name": "Pango",
+    "Filename": "ant02",
+    "Request": "Ultimate Beauty Salon",
+    "Thought bubble": "I want to relax in a hot tub at the ultimate beauty salon!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant02.png"
+  },
+  {
+    "Name": "Paolo",
+    "Filename": "elp05",
+    "Request": "Paolo's Prep Kitchen",
+    "Thought bubble": "I want a pro-level kitchen so I can really chef it up!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp05.png"
+  },
+  {
+    "Name": "Papi",
+    "Filename": "hrs12",
+    "Request": "Shrine to Wooden Furniture",
+    "Thought bubble": "I want a wooden home with lots of wooden furniture.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs12.png"
+  },
+  {
+    "Name": "Pashmina",
+    "Filename": "goa08",
+    "Request": "Flower-Art Atelier",
+    "Thought bubble": "I want to share the beauty of flowers through my flower art.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa08.png"
+  },
+  {
+    "Name": "Pate",
+    "Filename": "duk02",
+    "Request": "A Wired Café",
+    "Thought bubble": "I want a place that feels like an old-school internet café!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk02.png"
+  },
+  {
+    "Name": "Patty",
+    "Filename": "cow00",
+    "Request": "A Grilling Paradise",
+    "Thought bubble": "I want to grill and chill every single day!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cow00.png"
+  },
+  {
+    "Name": "Paula",
+    "Filename": "bea10",
+    "Request": "All-Night Karaoke Club",
+    "Thought bubble": "I wanna do karaoke all night with my friends!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea10.png"
+  },
+  {
+    "Name": "Peaches",
+    "Filename": "hrs08",
+    "Request": "A Shrine to Roundness",
+    "Thought bubble": "I want a place with a gentle vibe and plenty of roundness.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs08.png"
+  },
+  {
+    "Name": "Peanut",
+    "Filename": "squ00",
+    "Request": "Peanut's Americana Museum",
+    "Thought bubble": "Gimme a fun life with stuff that reminds me of America!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ00.png"
+  },
+  {
+    "Name": "Pecan",
+    "Filename": "squ03",
+    "Request": "A Chic and Relaxing Home",
+    "Thought bubble": "I want to relax with chic, high-quality furniture.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ03.png"
+  },
+  {
+    "Name": "Peck",
+    "Filename": "brd17",
+    "Request": "Home Field for a Sportsman",
+    "Thought bubble": "To me, vacation means being surrounded by the sporty life.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd17.png"
+  },
+  {
+    "Name": "Peewee",
+    "Filename": "gor01",
+    "Request": "Elite Sports Gym",
+    "Thought bubble": "I want to work out in a gym that caters to elite athletes!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor01.png"
+  },
+  {
+    "Name": "Peggy",
+    "Filename": "pig11",
+    "Request": "Supermarket Full of Samples",
+    "Thought bubble": "Being a food reporter in a supermarket sounds SO fun!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig11.png"
+  },
+  {
+    "Name": "Pekoe",
+    "Filename": "cbr14",
+    "Request": "My Own Zen Resort",
+    "Thought bubble": "I want a relaxing vacation home with Asian resort vibes.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr14.png"
+  },
+  {
+    "Name": "Penelope",
+    "Filename": "mus17",
+    "Request": "My Ever-After Home",
+    "Thought bubble": "I want to relax in my own happily ever after...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus17.png"
+  },
+  {
+    "Name": "Petri",
+    "Filename": "mus19",
+    "Request": "Teatime Terrace",
+    "Thought bubble": "Sometimes I just need a nice, relaxing teatime...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus19.png"
+  },
+  {
+    "Name": "Phil",
+    "Filename": "ost07",
+    "Request": "The Sight of Myself in Space",
+    "Thought bubble": "I want a place that feels like I'm floating in outer space.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost07.png"
+  },
+  {
+    "Name": "Phoebe",
+    "Filename": "ost10",
+    "Request": "A Place to Fan the Flames",
+    "Thought bubble": "My home should match my burning drive! I'm heating up!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost10.png"
+  },
+  {
+    "Name": "Pierce",
+    "Filename": "pbr02",
+    "Request": "His Majesty's Royal Gym",
+    "Thought bubble": "I wanna feel the burn but while I'm somewhere fancy!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr02.png"
+  },
+  {
+    "Name": "Pietro",
+    "Filename": "shp13",
+    "Request": "Pietro's World of Dreams",
+    "Thought bubble": "I want to share my world of dreams with everyone.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp13.png"
+  },
+  {
+    "Name": "Pinky",
+    "Filename": "bea01",
+    "Request": "A Feng Shui Field",
+    "Thought bubble": "I want good luck, so give me a flat inspired by feng shui!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea01.png"
+  },
+  {
+    "Name": "Piper",
+    "Filename": "brd05",
+    "Request": "A Soothing Spa Site",
+    "Thought bubble": "I want to relax in a spa where I can hear waves crashing...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd05.png"
+  },
+  {
+    "Name": "Pippy",
+    "Filename": "rbt06",
+    "Request": "A Very Convenient Store",
+    "Thought bubble": "Convenience stores—I love 'em! They're so convenient!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt06.png"
+  },
+  {
+    "Name": "Plucky",
+    "Filename": "chn10",
+    "Request": "A Home for the Hula Life",
+    "Thought bubble": "If I could always have that hula rhythm in my life...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/chn10.png"
+  },
+  {
+    "Name": "Pompom",
+    "Filename": "duk05",
+    "Request": "A Fabulous Yard",
+    "Thought bubble": "It'd be trés fab to have a yard with a pool for splashing!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk05.png"
+  },
+  {
+    "Name": "Poncho",
+    "Filename": "cbr02",
+    "Request": "A Prairie Western Home",
+    "Thought bubble": "I want a cool home straight out of a western movie!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr02.png"
+  },
+  {
+    "Name": "Poppy",
+    "Filename": "squ15",
+    "Request": "Pet Plushie Palace",
+    "Thought bubble": "I'd like to spend more time with my pets and plushies...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ15.png"
+  },
+  {
+    "Name": "Portia",
+    "Filename": "dog05",
+    "Request": "A Venue for Timeless Music",
+    "Thought bubble": "I require a space in which I can enjoy classical music.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog05.png"
+  },
+  {
+    "Name": "Prince",
+    "Filename": "flg12",
+    "Request": "The Robot Arena",
+    "Thought bubble": "Know what's cool? Robots that fight monsters! Yay!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg12.png"
+  },
+  {
+    "Name": "Puck",
+    "Filename": "pgn06",
+    "Request": "House of Sports and Sweets",
+    "Thought bubble": "I want a place to enjoy sports and eat ice cream.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn06.png"
+  },
+  {
+    "Name": "Puddles",
+    "Filename": "flg06",
+    "Request": "A Lovely Getaway",
+    "Thought bubble": "I want my vacation home to be full of cute, lovely stuff!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg06.png"
+  },
+  {
+    "Name": "Pudge",
+    "Filename": "cbr03",
+    "Request": "My Pretentious Palace",
+    "Thought bubble": "I wanna hang out in a fancy place surrounded by riches!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr03.png"
+  },
+  {
+    "Name": "Punchy",
+    "Filename": "cat06",
+    "Request": "A Vacation-Home Treat",
+    "Thought bubble": "I want a place so comfy that I know I'm treating myself.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat06.png"
+  },
+  {
+    "Name": "Purrl",
+    "Filename": "cat07",
+    "Request": "A Kotatsu Citadel",
+    "Thought bubble": "My ideal day? Me, cozy under my kotatsu, eating oranges.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat07.png"
+  },
+  {
+    "Name": "Queenie",
+    "Filename": "ost00",
+    "Request": "Contrast Courtyard",
+    "Thought bubble": "I've always loved how black contrasts against white.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost00.png"
+  },
+  {
+    "Name": "Quillson",
+    "Filename": "duk17",
+    "Request": "My Own Recording Studio",
+    "Thought bubble": "I want to drop an album, so I need somewhere to record it.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk17.png"
+  },
+  {
+    "Name": "Quinn",
+    "Filename": "pbr10",
+    "Request": "A Place to Express Myself",
+    "Thought bubble": "I want a place to express beauty in all its forms.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr10.png"
+  },
+  {
+    "Name": "Raddle",
+    "Filename": "flg15",
+    "Request": "Mad Scientist's Lair",
+    "Thought bubble": "I could pretend to be a wacky scientist doing experiments.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg15.png"
+  },
+  {
+    "Name": "Rasher",
+    "Filename": "pig02",
+    "Request": "Not-Too-Serious Secret Base",
+    "Thought bubble": "I want a secret base for me and my pals to horse around.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig02.png"
+  },
+  {
+    "Name": "Raymond",
+    "Filename": "cat23",
+    "Request": "A Home Tailored for Me",
+    "Thought bubble": "If my home could feel like a tailor shop, that would rule.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat23.png"
+  },
+  {
+    "Name": "Renée",
+    "Filename": "rhn08",
+    "Request": "Total Blank Slate",
+    "Thought bubble": "I miss the time I spent hanging out in empty lots...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn08.png"
+  },
+  {
+    "Name": "Reneigh",
+    "Filename": "hrs16",
+    "Request": "Fancy-Party House",
+    "Thought bubble": "I want a place to gather my friends for fancy parties!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs16.png"
+  },
+  {
+    "Name": "Rex",
+    "Filename": "lon02",
+    "Request": "A Place to Climb Mountains",
+    "Thought bubble": "I wanna climb mountains and take in the pretty scenery.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon02.png"
+  },
+  {
+    "Name": "Rhonda",
+    "Filename": "rhn01",
+    "Request": "A Home for Pleasant Dreams",
+    "Thought bubble": "I want a relaxing home so all my dreams are pleasant ones.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn01.png"
+  },
+  {
+    "Name": "Ribbot",
+    "Filename": "flg01",
+    "Request": "A Gym Full of Handles",
+    "Thought bubble": "I want all kinds of handles I can turn. It's great exercise!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg01.png"
+  },
+  {
+    "Name": "Ricky",
+    "Filename": "squ10",
+    "Request": "The Halls of Medicine",
+    "Thought bubble": "I want a place where I can learn about being a doctor!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ10.png"
+  },
+  {
+    "Name": "Rilla",
+    "Filename": "gor11",
+    "Request": "A Chart-Topping Chalet",
+    "Thought bubble": "I wanna relax in a cute spot while I make a hit record.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor11.png"
+  },
+  {
+    "Name": "Rio",
+    "Filename": "ost04",
+    "Request": "Workout Workshop",
+    "Thought bubble": "Fitness every day! Anytime! That's what I want!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost04.png"
+  },
+  {
+    "Name": "Rizzo",
+    "Filename": "mus09",
+    "Request": "A Secret Hideaway",
+    "Thought bubble": "I want a secret hideaway that no one else can find.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus09.png"
+  },
+  {
+    "Name": "Roald",
+    "Filename": "pgn01",
+    "Request": "A Wannabe's Racetrack",
+    "Thought bubble": "I want a place that makes me feel like I'm a racer.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn01.png"
+  },
+  {
+    "Name": "Robin",
+    "Filename": "brd01",
+    "Request": "A Classical Estate",
+    "Thought bubble": "I want to relax while gazing at beautiful, classical things.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd01.png"
+  },
+  {
+    "Name": "Rocco",
+    "Filename": "hip00",
+    "Request": "Rocco's Danger Zone",
+    "Thought bubble": "I wanna feel like I'm right on the cusp of danger.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hip00.png"
+  },
+  {
+    "Name": "Rocket",
+    "Filename": "gor09",
+    "Request": "A Respite for Heroes",
+    "Thought bubble": "Heroes need a place to rest! Everyone needs a break.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor09.png"
+  },
+  {
+    "Name": "Rod",
+    "Filename": "mus05",
+    "Request": "A Pirate's Secret Hideaway",
+    "Thought bubble": "Pirates are so cool! I want my own pirate hideaway!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus05.png"
+  },
+  {
+    "Name": "Rodeo",
+    "Filename": "bul01",
+    "Request": "My Wizardly Watchtower",
+    "Thought bubble": "I like magic. Can I learn lots of magic at my place?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bul01.png"
+  },
+  {
+    "Name": "Rodney",
+    "Filename": "ham03",
+    "Request": "Movie-Magic Studio",
+    "Thought bubble": "I want to make movies... Can my place be like a studio?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham03.png"
+  },
+  {
+    "Name": "Rolf",
+    "Filename": "tig00",
+    "Request": "An Alfresco Apartment",
+    "Thought bubble": "I wanna spend as much time outside as possible.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig00.png"
+  },
+  {
+    "Name": "Rooney",
+    "Filename": "kgr09",
+    "Request": "Boxing Gym",
+    "Thought bubble": "Even if I'm on vacation, I want a boxing gym to get in reps.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr09.png"
+  },
+  {
+    "Name": "Rory",
+    "Filename": "lon07",
+    "Request": "A Tropical Ocean Paradise",
+    "Thought bubble": "I grew up near the ocean, so I wanna feel like I'm there!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/lon07.png"
+  },
+  {
+    "Name": "Roscoe",
+    "Filename": "hrs04",
+    "Request": "Monotone Home",
+    "Thought bubble": "I wanna keep it simple. Make it all either black or white.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs04.png"
+  },
+  {
+    "Name": "Rosie",
+    "Filename": "cat02",
+    "Request": "My Very Own Talent Agency",
+    "Thought bubble": "I need a studio suitable for a true pop star.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat02.png"
+  },
+  {
+    "Name": "Roswell",
+    "Filename": "crd05",
+    "Request": "My Mystery Workshop",
+    "Thought bubble": "I want a place to study the mysterious stuff I find.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd05.png"
+  },
+  {
+    "Name": "Rowan",
+    "Filename": "tig01",
+    "Request": "Golden Shop",
+    "Thought bubble": "I want to run a shop filled with shiny golden things!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig01.png"
+  },
+  {
+    "Name": "Ruby",
+    "Filename": "rbt09",
+    "Request": "A Place to Admire the Moon",
+    "Thought bubble": "I want to admire the beautiful night sky and moon...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt09.png"
+  },
+  {
+    "Name": "Rudy",
+    "Filename": "cat20",
+    "Request": "Indoor Ball Sports Arena",
+    "Thought bubble": "I want a place where I can be the best at ball sports!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat20.png"
+  },
+  {
+    "Name": "Sally",
+    "Filename": "squ07",
+    "Request": "A Napping Field",
+    "Thought bubble": "I want to feel the breath of spring as I nap in a field...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ07.png"
+  },
+  {
+    "Name": "Samson",
+    "Filename": "mus04",
+    "Request": "A Treasure-Packed Gym",
+    "Thought bubble": "I bet lifting hidden treasure would be a great workout!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mus04.png"
+  },
+  {
+    "Name": "Sandy",
+    "Filename": "ost02",
+    "Request": "An Oasis for Runners",
+    "Thought bubble": "I want to give runners a place to rest their wings.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost02.png"
+  },
+  {
+    "Name": "Sasha",
+    "Filename": "rbt21",
+    "Request": "Moon-Shot Manor",
+    "Thought bubble": "I want a place that reminds me of the moon.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt21.png"
+  },
+  {
+    "Name": "Savannah",
+    "Filename": "hrs02",
+    "Request": "My Desert Oasis",
+    "Thought bubble": "I just want it to remind me of the arid place I grew up...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs02.png"
+  },
+  {
+    "Name": "Scoot",
+    "Filename": "duk10",
+    "Request": "A School with a Pool",
+    "Thought bubble": "I want a classroom with a pool so I can swim and study!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk10.png"
+  },
+  {
+    "Name": "Shari",
+    "Filename": "mnk07",
+    "Request": "House of Perennials",
+    "Thought bubble": "I want a place to show off always-blooming flowers.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk07.png"
+  },
+  {
+    "Name": "Sheldon",
+    "Filename": "squ16",
+    "Request": "Traffic-Safety Hub",
+    "Thought bubble": "I want a place where I can teach everyone traffic safety.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ16.png"
+  },
+  {
+    "Name": "Shep",
+    "Filename": "dog18",
+    "Request": "Sounds of the Street",
+    "Thought bubble": "I want a place that's got lots and lots of street noise!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog18.png"
+  },
+  {
+    "Name": "Sherb",
+    "Filename": "goa09",
+    "Request": "My Fantasy Theme Park",
+    "Thought bubble": "I think the world needs more fairy-tale theme parks.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa09.png"
+  },
+  {
+    "Name": "Shino",
+    "Filename": "der11",
+    "Request": "A Stage to Jam for Japan",
+    "Thought bubble": "I wanna rock out in front of a Japanese-style backdrop!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der11.png"
+  },
+  {
+    "Name": "Simon",
+    "Filename": "mnk02",
+    "Request": "Cool Car Lot",
+    "Thought bubble": "I want to line all my cool cars up and show them off.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk02.png"
+  },
+  {
+    "Name": "Skye",
+    "Filename": "wol09",
+    "Request": "Painting School",
+    "Thought bubble": "I'd love a place to host painting classes for families.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol09.png"
+  },
+  {
+    "Name": "Sly",
+    "Filename": "crd06",
+    "Request": "My Hide-and-Seek Jungle",
+    "Thought bubble": "I want to play hide-and-seek in a jungle-themed home!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/crd06.png"
+  },
+  {
+    "Name": "Snake",
+    "Filename": "rbt03",
+    "Request": "The Ultimate Chef Dojo",
+    "Thought bubble": "I need a place to train if I ever wanna be a hot-shot chef!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt03.png"
+  },
+  {
+    "Name": "Snooty",
+    "Filename": "ant06",
+    "Request": "Snooty's Indoor Swim Club",
+    "Thought bubble": "I'd simply adore having my own swim club...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant06.png"
+  },
+  {
+    "Name": "Soleil",
+    "Filename": "ham04",
+    "Request": "A Relaxing Summer Home",
+    "Thought bubble": "I could use a summer home to properly relax in.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ham04.png"
+  },
+  {
+    "Name": "Sparro",
+    "Filename": "brd18",
+    "Request": "A Gamer's Bunker",
+    "Thought bubble": "I want my own arcade so I can go hard in video games!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd18.png"
+  },
+  {
+    "Name": "Spike",
+    "Filename": "rhn02",
+    "Request": "Heart of the City",
+    "Thought bubble": "I want a slice of that stylish, big-city life.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn02.png"
+  },
+  {
+    "Name": "Spork",
+    "Filename": "pig05",
+    "Request": "Wee Library in the Fall Woods",
+    "Thought bubble": "Reading a good book in an autumn forest sounds great!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig05.png"
+  },
+  {
+    "Name": "Sprinkle",
+    "Filename": "pgn14",
+    "Request": "Castle of Cold",
+    "Thought bubble": "I'll melt if I'm not surrounded by snow and ice.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn14.png"
+  },
+  {
+    "Name": "Sprocket",
+    "Filename": "ost03",
+    "Request": "The Robo Depot",
+    "Thought bubble": "A factory that makes robots or mechs would be awesome!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ost03.png"
+  },
+  {
+    "Name": "Static",
+    "Filename": "squ08",
+    "Request": "A Thrill-Seeker's Hideaway",
+    "Thought bubble": "I want to experience thrills at home, like an adventurer.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ08.png"
+  },
+  {
+    "Name": "Stella",
+    "Filename": "shp03",
+    "Request": "My Pink Palace",
+    "Thought bubble": "I love the color pink... I want it all around me!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp03.png"
+  },
+  {
+    "Name": "Sterling",
+    "Filename": "pbr07",
+    "Request": "Sci-fi Sterling's Station",
+    "Thought bubble": "I want my vacation home to have a sci-fi theme!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pbr07.png"
+  },
+  {
+    "Name": "Stinky",
+    "Filename": "cat13",
+    "Request": "A Padded Ring for Romping",
+    "Thought bubble": "I want an indoor wrestling ring so I can play rough!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat13.png"
+  },
+  {
+    "Name": "Stitches",
+    "Filename": "cbr05",
+    "Request": "A Toy Box Full of Colors",
+    "Thought bubble": "I want a colorful vacation home that's like a toy box!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr05.png"
+  },
+  {
+    "Name": "Stu",
+    "Filename": "bul03",
+    "Request": "A Home with Woodsy Smells",
+    "Thought bubble": "I just want my nose to be hugged by the smell of trees.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bul03.png"
+  },
+  {
+    "Name": "Sydney",
+    "Filename": "kal03",
+    "Request": "A Working-Vacation Home",
+    "Thought bubble": "I've never worked in an office. I wonder what it's like.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal03.png"
+  },
+  {
+    "Name": "Sylvana",
+    "Filename": "squ14",
+    "Request": "Home of the Salad Life",
+    "Thought bubble": "Oh, I'd love a home for cooking with fresh veggies.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ14.png"
+  },
+  {
+    "Name": "Sylvia",
+    "Filename": "kgr06",
+    "Request": "A Family-Friendly Pool",
+    "Thought bubble": "If only my child and I could enjoy plenty of pool time...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr06.png"
+  },
+  {
+    "Name": "T-Bone",
+    "Filename": "bul05",
+    "Request": "A Place That Stirs the Soul",
+    "Thought bubble": "I want a home that'll set my soul on fire.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bul05.png"
+  },
+  {
+    "Name": "Tabby",
+    "Filename": "cat12",
+    "Request": "A Scary Old Hospital",
+    "Thought bubble": "I want to contrast my cute vibe with a scary old hospital!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat12.png"
+  },
+  {
+    "Name": "Tad",
+    "Filename": "flg09",
+    "Request": "Dreams of Strength Training",
+    "Thought bubble": "I want to be able to do strength training whenever!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg09.png"
+  },
+  {
+    "Name": "Tammi",
+    "Filename": "mnk03",
+    "Request": "House of Free Refills",
+    "Thought bubble": "I want a place where I'll never run out of my favorite drink.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk03.png"
+  },
+  {
+    "Name": "Tammy",
+    "Filename": "cbr17",
+    "Request": "My Piece of Pasta Paradise",
+    "Thought bubble": "I wanna make my own pasta. That way, I'll never run out!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr17.png"
+  },
+  {
+    "Name": "Tangy",
+    "Filename": "cat05",
+    "Request": "A Vivid Vivarium",
+    "Thought bubble": "I want a place that's totes FILLED with vivid colors!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat05.png"
+  },
+  {
+    "Name": "Tank",
+    "Filename": "rhn00",
+    "Request": "Tabletop-Game Grounds",
+    "Thought bubble": "I want to invite friends to my place to play tabletop games!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rhn00.png"
+  },
+  {
+    "Name": "Tasha",
+    "Filename": "squ13",
+    "Request": "An Orange Space",
+    "Thought bubble": "My home should have plenty of orange, just like my eyes.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/squ13.png"
+  },
+  {
+    "Name": "Teddy",
+    "Filename": "bea00",
+    "Request": "Always on the Move",
+    "Thought bubble": "Seeing a place packed up to move is kind of exciting!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea00.png"
+  },
+  {
+    "Name": "Tex",
+    "Filename": "pgn12",
+    "Request": "Practice Studio for the Band",
+    "Thought bubble": "I need a studio-style vacation home for band practice.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn12.png"
+  },
+  {
+    "Name": "Tia",
+    "Filename": "elp10",
+    "Request": "A Perfect Tea-Party Palace",
+    "Thought bubble": "I want to invite everyone over for a tea party.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp10.png"
+  },
+  {
+    "Name": "Tiansheng",
+    "Filename": "mnk09",
+    "Request": "Peach Paradise",
+    "Thought bubble": "I want my own utopia where I can eat peaches all the time!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/mnk09.png"
+  },
+  {
+    "Name": "Tiffany",
+    "Filename": "rbt07",
+    "Request": "Celeb Hideaway",
+    "Thought bubble": "I want the stylish and elusive celebrity lifestyle...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt07.png"
+  },
+  {
+    "Name": "Timbra",
+    "Filename": "shp10",
+    "Request": "Star-Filled Sanctuary",
+    "Thought bubble": "I want a place filled with stars so I can make lots of wishes...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp10.png"
+  },
+  {
+    "Name": "Tipper",
+    "Filename": "cow01",
+    "Request": "Tipper's Ranch",
+    "Thought bubble": "I would enjoy a wide-open space. Perhaps my own ranch.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cow01.png"
+  },
+  {
+    "Name": "Toby",
+    "Filename": "rbt20",
+    "Request": "A Peaceful Patio",
+    "Thought bubble": "I just wanna sit in a hallway and gaze at my yard.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/rbt20.png"
+  },
+  {
+    "Name": "Tom",
+    "Filename": "cat15",
+    "Request": "A Primal Boxing Ring",
+    "Thought bubble": "I wanna be able to go totally wild in the boxing ring.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cat15.png"
+  },
+  {
+    "Name": "Truffles",
+    "Filename": "pig01",
+    "Request": "Quiz-Show Soundstage",
+    "Thought bubble": "I wanna practice my trivia skills in a quiz show!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pig01.png"
+  },
+  {
+    "Name": "Tucker",
+    "Filename": "elp09",
+    "Request": "Armchair Archaeology Dig",
+    "Thought bubble": "I need a home with the right vibe for studying archaeology.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/elp09.png"
+  },
+  {
+    "Name": "Tutu",
+    "Filename": "bea07",
+    "Request": "A Place to Literally Chill",
+    "Thought bubble": "I love shaved ice, so I need someplace SUPER chill...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea07.png"
+  },
+  {
+    "Name": "Twiggy",
+    "Filename": "brd03",
+    "Request": "A Lively Party Space",
+    "Thought bubble": "I want a vacation home where I can party with everyone!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/brd03.png"
+  },
+  {
+    "Name": "Tybalt",
+    "Filename": "tig02",
+    "Request": "A Slugger's Dugout",
+    "Thought bubble": "I want a place to enshrine a sweet bat collection!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/tig02.png"
+  },
+  {
+    "Name": "Ursala",
+    "Filename": "bea08",
+    "Request": "A Flowery Bowery",
+    "Thought bubble": "I just want to arrange flowers and share my love of them.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bea08.png"
+  },
+  {
+    "Name": "Velma",
+    "Filename": "goa06",
+    "Request": "Velma's Schoolhouse",
+    "Thought bubble": "Having my own schoolhouse is a lifelong dream!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/goa06.png"
+  },
+  {
+    "Name": "Vesta",
+    "Filename": "shp00",
+    "Request": "Home with a Fireplace",
+    "Thought bubble": "I want to create a warm family space with its own fireplace.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp00.png"
+  },
+  {
+    "Name": "Vic",
+    "Filename": "bul08",
+    "Request": "An Adventurer's Home Base",
+    "Thought bubble": "I need a home base for my various adventures!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/bul08.png"
+  },
+  {
+    "Name": "Victoria",
+    "Filename": "hrs01",
+    "Request": "A Cute Cottage in Yellow",
+    "Thought bubble": "I want a cute place filled with cute yellow things!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs01.png"
+  },
+  {
+    "Name": "Violet",
+    "Filename": "gor07",
+    "Request": "Cozy Eatery",
+    "Thought bubble": "I want my place to be like a friendly neighborhood eatery.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/gor07.png"
+  },
+  {
+    "Name": "Vivian",
+    "Filename": "wol08",
+    "Request": "A Gym to Dance It Out",
+    "Thought bubble": "I need a place to work out to the rhythm of music.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol08.png"
+  },
+  {
+    "Name": "Vladimir",
+    "Filename": "cbr06",
+    "Request": "An Underground Lair",
+    "Thought bubble": "Don't wanna be found. Need an underground lair.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/cbr06.png"
+  },
+  {
+    "Name": "Wade",
+    "Filename": "pgn09",
+    "Request": "House of Ticking Clocks",
+    "Thought bubble": "I can't sleep without the ticktock sound of a clock...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/pgn09.png"
+  },
+  {
+    "Name": "Walker",
+    "Filename": "dog06",
+    "Request": "A Place to Show Off My Bike",
+    "Thought bubble": "I want a place that shows off how cool bikes are!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/dog06.png"
+  },
+  {
+    "Name": "Walt",
+    "Filename": "kgr08",
+    "Request": "The Set of Historical Drama",
+    "Thought bubble": "I wanna sip tea where they film those period dramas.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kgr08.png"
+  },
+  {
+    "Name": "Wart Jr.",
+    "Filename": "flg05",
+    "Request": "House of Bonsai",
+    "Thought bubble": "I want a messy but beautiful place filled with bonsai.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/flg05.png"
+  },
+  {
+    "Name": "Weber",
+    "Filename": "duk11",
+    "Request": "A Pro Musician's Pad",
+    "Thought bubble": "I want a place to play my instruments like a pro.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/duk11.png"
+  },
+  {
+    "Name": "Wendy",
+    "Filename": "shp09",
+    "Request": "Warm Winter Den",
+    "Thought bubble": "I wanna get my pals around the kotatsu for a party!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp09.png"
+  },
+  {
+    "Name": "Whitney",
+    "Filename": "wol03",
+    "Request": "The Makeup Salon",
+    "Thought bubble": "Well, what I'd love is to make everyone pretty with makeup.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol03.png"
+  },
+  {
+    "Name": "Willow",
+    "Filename": "shp07",
+    "Request": "Home for a Coffee Lover",
+    "Thought bubble": "I want a home that's nice and calm as I relax with my coffee.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/shp07.png"
+  },
+  {
+    "Name": "Winnie",
+    "Filename": "hrs05",
+    "Request": "A Stable of Stars",
+    "Thought bubble": "I want to build a stable that raises super-fast horses!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/hrs05.png"
+  },
+  {
+    "Name": "Wolfgang",
+    "Filename": "wol02",
+    "Request": "Rock-and-Roll Arena",
+    "Thought bubble": "I want an awesome space that screams rock and roll!",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/wol02.png"
+  },
+  {
+    "Name": "Yuka",
+    "Filename": "kal00",
+    "Request": "My Forested Jungle",
+    "Thought bubble": "I want to relax deep in a forested jungle...",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/kal00.png"
+  },
+  {
+    "Name": "Zell",
+    "Filename": "der02",
+    "Request": "My Perfect Hotel",
+    "Thought bubble": "I want to feel like I'm staying at a hotel, like, all the time.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/der02.png"
+  },
+  {
+    "Name": "Zoe",
+    "Filename": "ant05",
+    "Request": "My Cute and Tropical Corner",
+    "Thought bubble": "A cute, tropical chalet would be so me, wouldn't it?",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ant05.png"
+  },
+  {
+    "Name": "Zucker",
+    "Filename": "ocp02",
+    "Request": "Festival Grounds",
+    "Thought bubble": "I want my own festival where I can hang out with my pals.",
+    "Image": "https:\/\/acnhcdn.com\/latest\/NpcIcon\/ocp02.png"
+  }
+]
