@@ -22,6 +22,7 @@
 
 * {
   font-family: "quicksand", sans-serif;
+  box-sizing: border-box;
 }
 
 .app {
@@ -36,8 +37,7 @@ h2 {
 /* -------------------------------------- Catalog Header -------------------------------------- */
 
 .catalog {
-  display: block;
-  width: 80%;
+  flex: 1;
   background-color: var(--light-yellow);
   color: var(--brown);
   padding: 32px 64px;
@@ -57,7 +57,6 @@ h2 {
 .filter-search button {
   width: 32px;
   height: 32px;
-  background: none;
   border: none;
   cursor: pointer;
   color: var(--brown);
@@ -67,6 +66,7 @@ h2 {
 }
 
 .filter-button {
+  background: none;
   margin-right: 12px;
 }
 .filter-button:hover {
@@ -74,7 +74,7 @@ h2 {
 }
 
 .search-button {
-  background-color: var(--yellow);
+  background: var(--yellow);
   border-radius: 8px;
 }
 
@@ -89,13 +89,12 @@ h2 {
   justify-content: space-between;
   padding: 8px;
   width: 400px;
-  height: 32px;
   background-color: var(--white);
   border-radius: 12px;
 }
 
 .search input {
-  height: 100%;
+  height: 32px;
   width: 360px;
   font-size: 18px;
   font-weight: bold;
@@ -112,14 +111,14 @@ h2 {
 
 .cards {
   display: block;
-  max-height: calc(100% - 156px);
+  max-height: calc(100% - 64px);
   display: grid;
   grid-template-columns: repeat(auto-fill, 100px);
   row-gap: 20px;
   column-gap: 10px;
   align-items: stretch;
   justify-content: space-between;
-  margin: 20px auto;
+  margin-top: 20px;
   overflow-y: scroll;
   padding-right: 20px;
   padding-bottom: 32px;
@@ -153,45 +152,69 @@ h2 {
 
 /* -------------------------------------- Sidebar -------------------------------------- */
 
+.sidebar-toggle {
+  display: none;
+}
+
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
   background-color: var(--dark-green);
   color: var(--white);
   padding: 32px;
-}
-
-.accordion-closed {
-  width: 100%;
-  margin-top: 20px;
-  height: 30px;
+  height: 100vh;
   overflow: hidden;
-  transition-property: height;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
-}
-.accordion-open {
-  width: 100%;
-  flex-grow: 1;
-  margin-top: 20px;
-  margin-bottom: 32px;
-  transition-property: height;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
 }
 
-.facilities {
+.checklist {
+  height: 100%;
   display: flex;
-  height: fit-content;
-}
-.facilities .accordion-open {
-  overflow: none;
+  flex-direction: column;
 }
 
 .villagers {
+  margin-top: 20px;
+  flex: 0 1 auto;
+  overflow: hidden;
   display: flex;
-  max-height: calc(100% - 400px);
+  flex-direction: column;
+}
+
+.checklist-button {
+  flex: 0 0 auto;
+  margin-top: auto;
+}
+
+.accordion {
+  margin-bottom: 16px;
+}
+
+.accordion-list {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-left: 24px;
+  max-height: 0;
+  scrollbar-color: var(--dark-green) var(--green);
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
+}
+
+.facilities .accordion-list {
+  overflow-y: none;
+  scrollbar-width: none;
+}
+
+.accordion.expanded {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.accordion.expanded .accordion-list {
+  display: block;
+  width: 100%;
+  max-height: 1000px;
 }
 
 .accordion-button {
@@ -214,21 +237,6 @@ h2 {
   margin-right: 8px;
 }
 
-.accordion-list {
-  max-height: 100%;
-  padding-left: 24px;
-  scrollbar-color: var(--dark-green) var(--green);
-
-  transition-property: height;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
-}
-
-.villagers .accordion-list {
-  overflow-y: scroll;
-  max-height: 100%;
-}
-
 .accordion-item {
   display: flex;
   align-items: center;
@@ -238,4 +246,97 @@ h2 {
   width: 32px;
   height: 32px;
   margin-right: 8px;
+}
+
+/* -------------------------------------- Tablet/Smaller Computer Screens -------------------------------------- */
+
+@media(max-width: 1120px) {
+  h2 {
+    font-size: 32px;
+  }
+  
+  .catalog {
+    padding: 32px;
+  }
+  
+  .accordion-button h3 {
+    font-size: 18px;
+  }
+}
+
+/* -------------------------------------- Mobile/Tablet (collapsible checklist) -------------------------------------- */
+
+@media(max-width: 920px) {
+  h2 {
+    margin-left: 44px;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .catalog {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .cards {
+    row-gap: 12px;
+    column-gap: 6px;
+    padding-right: 0;
+    scrollbar-width: none;
+  }
+
+  .sidebar-toggle {
+    display: inline-block;
+    position: fixed;
+    top: 24px;
+    left: 20px;
+    z-index: 10;
+    background: none;
+    border: none;
+    color: var(--brown);
+  }
+
+  .sidebar-toggle:hover {
+    color: var(--coral);
+  }
+  .sidebar-toggle:active {
+    scale: 95%;
+  }
+
+  .filter-search {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .search {
+    width: auto;
+    flex: 1;
+  }
+
+  .search input {
+    width: fit-content;
+  }
+
+  .checklist {
+    display: none;
+  }
+
+  .checklist.open {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    background-color: var(--dark-green);
+    z-index: 5;
+    width: 100%;
+  }
 }

@@ -4,7 +4,7 @@ const Accordion = ({ title, data }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className={accordionOpen ? 'accordion-open' : 'accordion-closed'}>
+    <div className={`accordion ${accordionOpen ? 'expanded' : ''}`}>
       <button className='accordion-button'
         onClick={() => setAccordionOpen(!accordionOpen)}
       >
