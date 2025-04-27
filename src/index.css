@@ -69,18 +69,10 @@ h2 {
   background: none;
   margin-right: 12px;
 }
-.filter-button:hover {
-  color: var(--coral)
-}
 
 .search-button {
   background: var(--yellow);
   border-radius: 8px;
-}
-
-.search-button:hover {
-  background-color: var(--coral);
-  color: var(--white);
 }
 
 .search {
@@ -137,10 +129,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.card:hover {
-  background: var(--green);
 }
 
 .overlay-trigger {
@@ -375,9 +363,13 @@ h2 {
 
 /* -------------------------------------- Mobile/Tablet (collapsible checklist) -------------------------------------- */
 
-@media(max-width: 920px) {
+@media(max-width: 920px) or ((orientation: portrait) and (not(hover))) {
   h2 {
     margin-left: 44px;
+  }
+
+  .overlay h2 {
+    margin-left: 0;
   }
   
   .header {
@@ -392,7 +384,6 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
   }
 
   .cards {
@@ -407,15 +398,12 @@ h2 {
     position: fixed;
     top: 24px;
     left: 20px;
-    z-index: 10;
+    z-index: 5;
     background: none;
     border: none;
     color: var(--brown);
   }
 
-  .sidebar-toggle:hover {
-    color: var(--coral);
-  }
   .sidebar-toggle:active {
     scale: 95%;
   }
@@ -445,7 +433,51 @@ h2 {
     left: 0px;
     padding: 20px;
     background-color: var(--dark-green);
-    z-index: 5;
+    z-index: 4;
     width: 100%;
+  }
+}
+
+/* -------------------------------------- Smaller screens (shrink overlay) -------------------------------------- */
+
+@media(max-width: 600px) {
+  .top-half {
+    flex-direction: column;
+  }
+
+  .top-half img {
+    width: 128px;
+    height: 128px;
+  }
+
+  .overlay h2 {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .overlay h3 {
+    margin: 8px 0;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    min-height: fit-content;
+  }
+}
+
+/* -------------------------------------- Hover effects -------------------------------------- */
+
+@media (hover: hover) {
+  .filter-button:hover {
+    color: var(--coral)
+  }
+
+  .search-button:hover {
+    background-color: var(--coral);
+    color: var(--white);
+  }
+
+  .card:hover {
+    background: var(--green);
   }
 }
