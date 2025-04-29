@@ -28,6 +28,7 @@
 .app {
   display: flex;
   height: 100vh;
+  background-color: var(--light-yellow);
 }
 
 h2 {
@@ -123,12 +124,16 @@ h2 {
   height: auto;
   max-height: 164px;
   padding: 8px;
-  background: var(--light-green);
+  background-color: rgba(164, 212, 162, 0.6);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.card.unlocked {
+  background-color: var(--green);
 }
 
 .overlay-trigger {
@@ -337,6 +342,14 @@ h2 {
 .accordion-item {
   display: flex;
   align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.accordion-item.selected {
+  color: var(--yellow);
 }
 
 .accordion-item img {
@@ -459,8 +472,16 @@ h2 {
     margin: 8px 0;
   }
 
+  .overlay h4 {
+    font-size: 14px;
+  }
+
+  .overlay p {
+    font-size: 12px;
+  }
+
   .info-grid {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     min-height: fit-content;
   }
 }

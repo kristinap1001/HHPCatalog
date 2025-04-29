@@ -24,6 +24,12 @@ def printDict(dic):
 	for key,value in dic.items():
 		print(key + ": " + ", ".join(value))
 
+# To convert string values in column to list containing string
+def listConvert(val):
+  if isinstance(val,list):
+    return val
+  return [val]
+
 # ================================================== Import and fix villager & facility unlocks ==================================================
 
 # Import HHP furniture lists
@@ -407,6 +413,7 @@ megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Sell'].isna()), 'Name'] = meg
 
 # Fill in HHP sources aside from villagers/facilities
 megaDf['HHP Source'].fillna("From player catalog after 27th home", inplace=True)
+megaDf['HHP Source'] = megaDf['HHP Source'].apply(listConvert)
 
 # ================================================== Organizing data in order of in-game catalog ==================================================
 

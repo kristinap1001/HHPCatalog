@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useContext } from 'react'
+import { ItemContext } from './ItemContext';
 import ItemOverlay from './ItemOverlay'
 
 const Card = ({ item }) => {
   const [overlayOpen, setOverlayOpen] = useState(false);
+  const { itemList } = useContext(ItemContext);
 
   let cardRef = useRef();
 
@@ -21,7 +23,7 @@ const Card = ({ item }) => {
 
   return (
     <>
-      <div className="card" >
+      <div className={`card ${itemList.includes(item.Name) ? 'unlocked' : ''}`} >
         <button className="overlay-trigger"
           onClick={() => setOverlayOpen(true)}
         ></button>
@@ -34,11 +36,7 @@ const Card = ({ item }) => {
           <ItemOverlay item={item} open={overlayOpen}/>
         </div>
       </div>
-      
-      
-      
     </>
-    
   )
 }
 
