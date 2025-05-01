@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const ItemOverlay = ({ item, open }) => {
   return (
-    <div className={`overlay ${open ? 'open' : ''}`}>
+    <div className={`overlay`}>
 
       <div className="top-half">
         

@@ -422,7 +422,7 @@ megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains(r"\b(?:an
 megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("statue")), 'Tab'] = 'housewares'
 # Paintings in housewares/wall-mounted
 megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("wild painting")), 'Tab'] = 'housewares'
-megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("painting")), 'Tab'] = 'wall-mounted'
+megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Name'].str.contains("painting")), 'Tab'] = 'wallmounted'
 
 # Fencing, music, toolsgoods in Other
 megaDf.loc[(megaDf['Tab'] == 'fencing'), 'Tag'] = 'fencing'
@@ -436,8 +436,13 @@ megaDf.loc[(megaDf['Tab'] == 'toolsgoods'), 'Tab'] = 'other'
 megaDf.loc[(megaDf['Tab'] == 'posters'), 'Tag'] = 'Posters'
 megaDf.loc[(megaDf['Tab'] == 'posters'), 'Tab'] = 'wallmounted'
 
+# rename tabs
+megaDf.loc[(megaDf['Tab'] == 'wallmounted'), 'Tab'] = 'wall-mounted'
+megaDf.loc[(megaDf['Tab'] == 'ceilingdecor'), 'Tab'] = 'ceiling decor'
+megaDf.loc[(megaDf['Tab'] == 'clothing'), 'Tab'] = 'fashion items'
+
 # specify tab order to match in-game
-megaDf['Tab'] = pd.Categorical(megaDf['Tab'], ['housewares','miscellaneous','wallmounted','ceilingdecor','wallpaper','floors','rugs','clothing','other'])
+megaDf['Tab'] = pd.Categorical(megaDf['Tab'], ['housewares','miscellaneous','wall-mounted','ceiling decor','wallpaper','floors','rugs','fashion items','other','artwork'])
 megaDf.sort_values(['Tab','Tag','Name'],inplace=True)
  
 # ================================================== Exporting finished dataset ==================================================
