@@ -41,6 +41,20 @@ h2 {
   font-size: 48px;
 }
 
+input {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 4px;
+  height: auto;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: var(--brown);
+}
+input:focus {
+  outline: none;
+}
+
 /* -------------------------------------- Catalog Header -------------------------------------- */
 
 .catalog {
@@ -139,24 +153,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px;
+  padding: 4px;
   width: 400px;
   background-color: var(--white);
   border-radius: 12px;
 }
 
 .search input {
-  height: 32px;
   width: 360px;
-  font-size: 18px;
-  font-weight: bold;
-  background: none;
-  border: none;
-  color: var(--brown);
-}
-
-.search input:focus {
-  outline: none;
 }
 
 /* -------------------------------------- Catalog Cards -------------------------------------- */
@@ -254,7 +258,7 @@ h2 {
 
 .pagination input {
   height: 20px;
-  width: 24px;
+  width: 28px;
   margin-left: 8px;
 }
 
@@ -445,6 +449,13 @@ h2 {
   scrollbar-width: none;
 }
 
+.facilities input {
+  display: none;
+}
+.facilities .count {
+  display: none;
+}
+
 .accordion.expanded {
   flex: 1 1 auto;
   display: flex;
@@ -587,7 +598,9 @@ h2 {
     padding: 20px;
     background-color: var(--dark-green);
     z-index: 4;
-    width: 100%;
+    width: fit-content;
+    border-radius: 12px;
+    filter: drop-shadow(rgba(36,72,70,0.34) -2px 2px 12px);
   }
 
   .accordion-button h3 {
@@ -602,13 +615,13 @@ h2 {
 /* -------------------------------------- Smaller screens (shrink overlay) -------------------------------------- */
 
 @media(max-width: 600px) {
-  .top-half {
+  .overlay .top-half {
     flex-direction: column;
   }
 
-  .top-half img {
-    width: 128px;
-    height: 128px;
+  .overlay .top-half img {
+    width: 96px;
+    height: 96px;
   }
 
   .overlay h2 {
@@ -622,6 +635,7 @@ h2 {
 
   .overlay h4 {
     font-size: 14px;
+    margin: 4px 0;
   }
 
   .overlay p {
@@ -630,6 +644,12 @@ h2 {
 
   .info-grid {
     min-height: fit-content;
+    row-gap: 0px;
+    margin-bottom: 8px;
+  }
+
+  .overlay {
+    padding: 16px;
   }
 }
 

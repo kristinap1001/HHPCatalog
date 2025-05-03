@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import villagers from '../villagers.json'
@@ -6,6 +6,19 @@ import villagers from '../villagers.json'
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+
+  const handleOutsideClick = (event) => {
+    if (!event.target.closest('.checklist.open') && !event.target.closest('.sidebar-toggle')) {
+      setIsOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    if(isOpen) {
+      document.addEventListener('mousedown', handleOutsideClick);
+      return () => document.removeEventListener('mousedown',handleOutsideClick);
+    }
+  }, [isOpen]);
 
   const invisSources = ['6 Homes and School', 'Start', 'From player catalog after 27th home'];
   const facilities = ['School','Cafe','Restaurant','Hospital','Apparel Shop','Leif Lesson'];

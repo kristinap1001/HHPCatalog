@@ -9,7 +9,7 @@ function App() {
   const start = villagers.find(villager => villager.Name == "Start");
   const [itemList, setItemList] = useState(start.Items);
   const [sourceList, setSourceList] = useState([start]);
-  const [sourceCount, setSourceCount] = useState(0);
+  const [villagerCount, setVillagerCount] = useState(0);
   const catalogSource = villagers.find(villager => villager.Name == "From player catalog after 27th home")
   const school = villagers.find(villager => villager.Name == "School")
   const afterSchool = villagers.find(villager => villager.Name == "6 Homes and School")
@@ -17,19 +17,19 @@ function App() {
   const addItem = (source) => {
     if (sourceList.includes(source)) return;
 
-    let newSourceCount = sourceCount;
+    let newVillagerCount = villagerCount;
     // Count villagers only
     if (source.Filename !== null) {
-      newSourceCount = sourceCount+1;
-      setSourceCount(newSourceCount);
+      newVillagerCount = villagerCount+1;
+      setVillagerCount(newVillagerCount);
     }
 
     let newSources = [...sourceList, source];
-    if (newSourceCount >= 27 && !sourceList.includes(catalogSource)) {
+    if (newVillagerCount >= 27 && !sourceList.includes(catalogSource)) {
       newSources = [...newSources, catalogSource]
     }
 
-    if (newSourceCount >= 6 && sourceList.includes(school)) {
+    if (newVillagerCount >= 6 && sourceList.includes(school)) {
       newSources = [...newSources, afterSchool]
     }
 
@@ -43,18 +43,18 @@ function App() {
   const deleteItem = (source) => {
     if (!sourceList.includes(source)) return;
 
-    let newSourceCount = sourceCount;
+    let newVillagerCount = villagerCount;
     if (source.Filename !== null) {
-      newSourceCount = sourceCount-1;
-      setSourceCount(newSourceCount);
+      newVillagerCount = villagerCount-1;
+      setVillagerCount(newVillagerCount);
     }
 
     let newSources = sourceList.filter(s => s != source);
-    if (newSourceCount < 27) {
+    if (newVillagerCount < 27) {
       newSources = newSources.filter(s => s != catalogSource);
     }
 
-    if (newSourceCount < 6 | !sourceList.includes(school)) {
+    if (newVillagerCount < 6 | !sourceList.includes(school)) {
       newSources = newSources.filter(s => s != afterSchool)
     }
 
@@ -68,7 +68,7 @@ function App() {
   }
 
   return (
-    <ItemContext.Provider value={{sourceList, itemList, addItem, deleteItem}}>
+    <ItemContext.Provider value={{sourceList, itemList, villagerCount, addItem, deleteItem}}>
       <div className='app'>
         <Sidebar />
         <Catalog />
