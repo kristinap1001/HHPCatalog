@@ -413,6 +413,11 @@ megaDf.loc[(megaDf['Tab'] == 'artwork') & (megaDf['Sell'].isna()), 'Name'] = meg
 
 # Fill in HHP sources aside from villagers/facilities
 megaDf['HHP Source'].fillna("From player catalog after 27th home", inplace=True)
+
+# Remove everything else if "Start" is a source
+megaDf.loc[(megaDf['HHP Source'].apply(lambda x: 'Start' in x)), 'HHP Source'] = "Start"
+
+# Replace all string values with lists
 megaDf['HHP Source'] = megaDf['HHP Source'].apply(listConvert)
 
 # ================================================== Organizing data in order of in-game catalog ==================================================

@@ -1,8 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
+import villagers from '../villagers.json'
+import { ItemContext } from './ItemContext';
 
-const ItemOverlay = ({ item, open }) => {
+const ItemOverlay = ({ item }) => {
+  const { sourceList } = useContext(ItemContext);
+  const sourceStrings = item["HHP Source"].join(', ');
+  const itemSources = villagers.filter((villager) => sourceStrings.includes(villager.Name));
+
   return (
-    <div className={`overlay`}>
+    <div className="overlay">
 
       <div className="top-half">
         
@@ -13,20 +19,25 @@ const ItemOverlay = ({ item, open }) => {
           <h3>{item.Tab} | {item.Tag}</h3>
 
           <div className='info-grid'>
-            <h4><em>Customize:</em> {String(item.Customize)}</h4>
-            <h4><em>DIY:</em> {String(item.DIY)}</h4>
-            <h4><em>Cyrus:</em> {String(item.Cyrus)}</h4>
+            <h4 className={`${item.Customize ? 'true' : 'false'}`}><em>Customize:</em> {String(item.Customize)}</h4>
+            <h4 className={`${item.DIY ? 'true' : 'false'}`}><em>DIY:</em> {String(item.DIY)}</h4>
+            <h4 className={`${item.Cyrus ? 'true' : 'false'}`}><em>Cyrus:</em> {String(item.Cyrus)}</h4>
             <h4><em>Catalog:</em> {item.Catalog}</h4>
-            <h4><em>Buy Price:</em> {item.Buy}</h4>
-            <h4><em>Sell Price:</em> {item.Sell}</h4>
+            <h4><em>Buy Price:</em> {item.Buy === null ? "N/A" : item.Buy}</h4>
+            <h4><em>Sell Price:</em> {item.Sell === null ? "N/A" : item.Sell}</h4>
           </div>
         </div>
       </div>
 
       <h4><em>HHP Unlocks</em></h4>
-      <p>{typeof item["HHP Source"] == "string" ? 
-        item["HHP Source"] : item["HHP Source"].join(', ')}
-      </p>
+        <div className="source-list">
+          {itemSources.map((src) => (
+            <div className={`source ${sourceList.includes(src) ? 'owned' : ''}`}>
+              <img src={src.Image} alt="Villager image" />
+              <p>{src.Name}</p>
+            </div>
+          ))}
+        </div>
 
       <h4><em>Source:</em> {item.Source}</h4>
       <p>{item["Source Notes"]}</p>

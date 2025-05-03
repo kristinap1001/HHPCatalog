@@ -18,10 +18,13 @@ villagers.drop('Villager Name', axis=1, inplace=True)
 villagers.rename(columns={"HHP Source":"Name", "Item Name":"Items"}, inplace=True)
 
 villagers.loc[(villagers['Name'] == 'School'), 'Image'] = 'https://dodo.ac/np/images/thumb/5/58/School_HHP_Icon.png/35px-School_HHP_Icon.png'
+villagers.loc[(villagers['Name'] == '6 Homes and School'), 'Image'] = 'https://dodo.ac/np/images/thumb/5/58/School_HHP_Icon.png/35px-School_HHP_Icon.png'
 villagers.loc[(villagers['Name'] == 'Cafe'), 'Image'] = 'https://dodo.ac/np/images/thumb/5/5c/Caf%C3%A9_HHP_Icon.png/35px-Caf%C3%A9_HHP_Icon.png'
 villagers.loc[(villagers['Name'] == 'Restaurant'), 'Image'] = 'https://dodo.ac/np/images/thumb/4/43/Restaurant_HHP_Icon.png/35px-Restaurant_HHP_Icon.png'
 villagers.loc[(villagers['Name'] == 'Hospital'), 'Image'] = 'https://dodo.ac/np/images/thumb/0/09/Hospital_HHP_Icon.png/35px-Hospital_HHP_Icon.png'
 villagers.loc[(villagers['Name'] == 'Apparel Shop'), 'Image'] = 'https://dodo.ac/np/images/thumb/4/44/Apparel_Shop_HHP_Icon.png/35px-Apparel_Shop_HHP_Icon.png'
 villagers.loc[(villagers['Name'] == 'Leif Lesson'), 'Image'] = 'https://acnhcdn.com/latest/NpcIcon/slo.png'
+villagers.loc[(villagers['Name'] == 'Start'), 'Image'] = 'https://dodo.ac/np/images/f/f6/Delivery_NH_Inv_Icon.png'
+villagers.loc[(villagers['Name'] == 'From player catalog after 27th home'), 'Image'] = 'https://dodo.ac/np/images/3/39/Menu_Nook_Shopping_NH_Icon.png'
 
 villagers.to_json("src/villagers.json",orient='records',force_ascii=False)

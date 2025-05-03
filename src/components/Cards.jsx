@@ -9,7 +9,7 @@ const Cards = ({ itemList }) => {
   const [activeItem, setActiveItem] = useState(null);
 
   const handleOutsideClick = (event) => {
-    if (!event.target.closest('.overlay-container')) {
+    if (!event.target.closest('.overlay')) {
       setActiveItem(null);
     }
   }
@@ -41,12 +41,18 @@ const Cards = ({ itemList }) => {
 
   useEffect(() => {
     // Re-render page & number of pages when itemList is updated
-    if (pageNumber > numPages) {
+    if (numItems == 0) {
+      setPageNumber(1)
+      setPage(itemList.slice(0, numCards))
+
+    } else if (pageNumber > numPages) {
       setPageNumber(numPages);
       setPage(itemList.slice((numPages-1)*numCards, numPages*numCards));
+
     } else {
       setPage(itemList.slice((pageNumber-1)*numCards, pageNumber*numCards))
     }
+    
   }, [itemList])
 
   const changePage = (newNum) => {

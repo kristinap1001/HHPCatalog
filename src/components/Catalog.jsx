@@ -34,6 +34,19 @@ const Catalog = () => {
 
   const [finalItemList, setFinalItemList] = useState(searchResults);
 
+  const handleOutsideClick = (event) => {
+    if (!event.target.closest('.filter-menu') && !event.target.closest('.filter-button')) {
+      setFilterOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    if(filterOpen) {
+      document.addEventListener('mousedown', handleOutsideClick);
+      return () => document.removeEventListener('mousedown',handleOutsideClick);
+    }
+  }, [filterOpen]);
+
   const selectAll = () => {
     if (filterList.length == filterCategories.length) {
       setFilterList([]);
@@ -115,7 +128,11 @@ const Catalog = () => {
           </div>
 
           <div className="search">
-            <input onChange={event => setSearchItem(event.target.value)}
+            <input 
+              onChange={event => setSearchItem(event.target.value)}
+              onKeyDown = {(e) => {
+                if (e.key === "Enter") {handleSubmit(e);}
+              }}
               type="text" 
               name="search" 
               placeholder="Search"
