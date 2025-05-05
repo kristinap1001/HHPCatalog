@@ -5,21 +5,18 @@
 
 :root {
   --white: #fff9e5;
+  --white-shadow: #e3e2b4;
   --brown: #766751;
   --coral: #ff7c69;
-  --pink: #febdc3;
-  --dark-pink: #ef758a;
   --light-yellow: #f8eebc;
   --yellow: #fcea64;
-  --dark-yellow: #f5c24c;
-  --light-blue: #8ecfca;
-  --blue: #7cc8c3;
   --dark-blue: #017c74;
-  --light-green: #a4d4a2;
+  --light-green: #c0d98d;
   --green: #88c9a1;
   --dark-green: #68b893;
-  --true-green: #3f7b38;
-  --false-red: #ad3434;
+  --true-green: #04bc03;
+  --false-red: #ff544a;
+  
   background-color: var(--light-yellow);
 }
 
@@ -30,15 +27,40 @@
 .app {
   display: flex;
   height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  color: var(--dark-blue);
+
+  transition-property: background-color, color, scale;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+p {
+  font-weight: 600;
 }
 
 button {
   background: none;
   border: none;
+  cursor: pointer;
+
+  transition-property: background-color, color, scale;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+button:active {
+  scale: 95%;
 }
 
 h2 {
   font-size: 48px;
+}
+
+em {
+  font-style: normal;
 }
 
 input {
@@ -47,7 +69,7 @@ input {
   padding: 4px;
   height: auto;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 800;
   border: none;
   color: var(--brown);
 }
@@ -81,15 +103,7 @@ input:focus {
 .filter-search button {
   width: 32px;
   height: 32px;
-  cursor: pointer;
   color: var(--brown);
-}
-.filter-button:active {
-  scale: 95%;
-}
-
-.search-button:active {
-  scale: 95%;
 }
 
 .filter-button {
@@ -186,19 +200,21 @@ input:focus {
   height: auto;
   max-height: 164px;
   padding: 8px;
-  background-color: rgba(164, 212, 162, 0.6);
+  background-color: var(--white-shadow);
+  filter: drop-shadow(rgba(36,72,70,0.1) 0px 0px 3px);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 }
 
 .card.unlocked {
-  background-color: var(--blue);
+  background-color: var(--light-green);
 }
 
 .overlay-trigger {
@@ -208,7 +224,6 @@ input:focus {
   height: 100%;
   border: none;
   background: none;
-  cursor: pointer;
 }
 
 .card h4 {
@@ -222,10 +237,6 @@ input:focus {
   background-color: rgba(118, 103, 81, 0.25);
   border-radius: 12px;
   margin-bottom: 8px;
-}
-
-.card.unlocked img {
-  background-color: rgba(118, 103, 81, 0.5);
 }
 
 /* -------------------------------------- Pagination -------------------------------------- */
@@ -269,12 +280,8 @@ input:focus {
 .pagination button {
   margin-top: 2px;
   padding: 4px;
-  cursor: pointer;
 }
 
-.pagination button:active {
-  scale: 95%;
-}
 
 /* -------------------------------------- Overlays -------------------------------------- */
 .overlay-background {
@@ -293,38 +300,52 @@ input:focus {
 .overlay {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-green);
+  background-color: var(--light-yellow);
   padding: 24px;
   border-radius: 12px;
   max-width: 640px;
   filter: drop-shadow(rgba(36,72,70,0.34) -2px 2px 12px)
 }
 
+.overlay p {
+  font-size: 14px;
+  color: var(--brown);
+  margin-top: 12px;
+}
+.overlay p em {
+  color: var(--dark-blue);
+}
+
+.overlay h3 {
+  font-size: 16px;
+  color: var(--dark-blue);
+}
+
+.overlay .mayor-icon {
+  vertical-align: middle;
+  margin: 3px;
+  width: 32px;
+}
+
 .overlay h4 {
   font-size: 18px;
   font-weight: 500;
-  margin: 12px 0;
-  text-transform: capitalize;
 }
 
 .overlay h4 em {
   font-weight: 800;
-  font-style: normal;
   color: var(--brown);
 }
 
 .overlay .top-half {
   display: flex;
-}
-
-.overlay .top-half h4 {
-  margin: 0;
+  margin-bottom: 12px;
 }
 
 .overlay .top-half img {
   width: 170px;
   height: 170px;
-  background-color: rgba(118, 103, 81, 0.5);
+  background-color: var(--white-shadow);
   border-radius: 12px;
   margin-right: 12px;
 }
@@ -342,8 +363,6 @@ input:focus {
 
 .overlay .header-info h3 {
   text-transform: capitalize;
-  font-size: 16px;
-  color: var(--dark-blue);
 }
 
 .overlay .info-grid {
@@ -354,6 +373,10 @@ input:focus {
   column-gap: 20px;
   align-items: end;
 }
+.overlay .info-grid h4 {
+  margin: 0;
+  text-transform: capitalize;
+}
 
 .overlay .info-grid .true {
   color: var(--true-green);
@@ -363,25 +386,22 @@ input:focus {
   color: var(--false-red);
 }
 
-.overlay p {
-  display: inline;
-  font-size: 14px;
-  color: var(--dark-blue);
-  font-weight: 600;
-}
-
 .overlay .source-list {
   margin-right: -8px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .overlay .source {
   display: inline flex;
   align-items: center;
   margin-right: 8px;
+  font-size: 14px;
 }
 
 .overlay .source p {
-  font-weight: 500;
+  margin: 0;
+  color: var(--dark-blue);
 }
 
 .overlay .source.owned p {
@@ -423,12 +443,6 @@ input:focus {
   flex-direction: column;
 }
 
-.checklist-button {
-  flex: 0 0 auto;
-  margin-top: auto;
-  display: none;
-}
-
 .accordion {
   margin-bottom: 16px;
 }
@@ -439,6 +453,7 @@ input:focus {
   padding-left: 24px;
   max-height: 0;
   scrollbar-color: var(--dark-green) var(--green);
+
   transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(.49,.48,.5,1.06);
@@ -473,7 +488,9 @@ input:focus {
 .accordion-button {
   color: var(--white);
   margin-bottom: 8px;
-  cursor: pointer;
+}
+.accordion-button:active {
+  scale: 99%;
 }
 
 .accordion-button h3 {
@@ -493,7 +510,6 @@ input:focus {
   align-items: center;
   border: none;
   background: none;
-  cursor: pointer;
   color: var(--white);
   font-size: 16px;
   margin: 4px 0;
@@ -509,6 +525,25 @@ input:focus {
   margin-right: 8px;
 }
 
+.checklist-buttons {
+  flex: 0 0 auto;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checklist-button {
+  color: var(--white);
+  background: var(--green);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.checklist-button:active {
+  scale: 97%;
+}
+
 /* -------------------------------------- Tablet/Smaller Computer Screens -------------------------------------- */
 
 @media(max-width: 1120px) {
@@ -518,6 +553,15 @@ input:focus {
   
   .catalog {
     padding: 32px;
+  }
+
+  .checklist-buttons {
+    flex-direction: column;
+    margin-bottom: -16px;
+  }
+
+  .checklist-button {
+    margin-bottom: 16px;
   }
   
   .accordion-button h3 {
@@ -566,10 +610,6 @@ input:focus {
     background: none;
     border: none;
     color: var(--brown);
-  }
-
-  .sidebar-toggle:active {
-    scale: 95%;
   }
 
   .filter-search {
@@ -665,11 +705,19 @@ input:focus {
     color: var(--white);
   }
 
+  .checklist-button:hover {
+    background-color: var(--coral);
+  }
+
   .pagination button:hover {
     color: var(--coral);
   }
 
   .card:hover {
     background: var(--green);
+  }
+
+  a:hover {
+    color: var(--coral);
   }
 }

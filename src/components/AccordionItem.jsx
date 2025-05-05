@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { ItemContext } from './ItemContext';
 
 const AccordionItem = ({ source }) => {
@@ -15,6 +15,12 @@ const AccordionItem = ({ source }) => {
       deleteItem(source);
     }
   }
+
+  useEffect(() => {
+    if (sourceList.includes(source)) {
+      setSelected(true);
+    }
+  }, [sourceList])
 
   return (
     <button 

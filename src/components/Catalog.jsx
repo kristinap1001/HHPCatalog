@@ -127,6 +127,8 @@ const Catalog = () => {
             ))}
           </div>
 
+          {/* ---------- Search ---------- */}
+
           <div className="search">
             <input 
               onChange={event => setSearchItem(event.target.value)}
@@ -147,6 +149,8 @@ const Catalog = () => {
           
         </div>
       </div>
+      
+      {/* ---------- Cards ---------- */}
 
       <Cards itemList={finalItemList}/>
     </div>

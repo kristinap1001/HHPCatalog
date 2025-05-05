@@ -76,7 +76,7 @@ const Cards = ({ itemList }) => {
       {/* ---------- Card Overlay ---------- */}
 
       {activeItem && (
-        <div className={`overlay-background`}>
+        <div className='overlay-background'>
           <ItemOverlay item={activeItem}/>
         </div>
       )}

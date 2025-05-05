@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Sidebar from './components/Sidebar'
 import Catalog from './components/Catalog'
 import { ItemContext } from './components/ItemContext'
 import villagers from './villagers.json'
+import Cookies from 'js-cookie'
 
 function App() {
   const start = villagers.find(villager => villager.Name == "Start");
@@ -13,6 +14,43 @@ function App() {
   const catalogSource = villagers.find(villager => villager.Name == "From player catalog after 27th home")
   const school = villagers.find(villager => villager.Name == "School")
   const afterSchool = villagers.find(villager => villager.Name == "6 Homes and School")
+
+  useEffect(() => {
+    const cookieVal = Cookies.get("sourceList");
+    if (cookieVal !== undefined) {
+      const cookieNameList = cookieVal.split(',');
+      const loadedSources = cookieNameList
+        .map(name => villagers.find(v => v.Name === name))
+        .filter(Boolean);
+  
+      let newVillagerCount = 0;
+      const newItems = new Set();
+      let extendedSources = [...loadedSources];
+  
+      // Count villagers and gather items
+      loadedSources.forEach(src => {
+        if (src.Filename !== null) {
+          newVillagerCount++;
+        }
+        src.Items.forEach(item => newItems.add(item));
+      });
+  
+      // Add special cases
+      if (newVillagerCount >= 27 && !extendedSources.includes(catalogSource)) {
+        extendedSources.push(catalogSource);
+        catalogSource.Items.forEach(item => newItems.add(item));
+      }
+  
+      if (newVillagerCount >= 6 && extendedSources.includes(school)) {
+        extendedSources.push(afterSchool);
+        afterSchool.Items.forEach(item => newItems.add(item));
+      }
+  
+      setSourceList(extendedSources);
+      setItemList(Array.from(newItems));
+      setVillagerCount(newVillagerCount);
+    }
+  }, []);
 
   const addItem = (source) => {
     if (sourceList.includes(source)) return;
@@ -36,6 +74,7 @@ function App() {
     const newItems = new Set(itemList);
     source.Items.forEach(item => newItems.add(item));
 
+    Cookies.set('sourceList', [...newSources.map(src => src.Name)], { expires: 7 });
     setSourceList(newSources);
     setItemList(Array.from(newItems));
     }
@@ -63,6 +102,7 @@ function App() {
       src.Items.forEach(item => remainingItems.add(item));
     });
 
+    Cookies.set('sourceList', [...newSources.map(src => src.Name)], { expires: 7 });
     setSourceList(newSources);
     setItemList(Array.from(remainingItems));
   }

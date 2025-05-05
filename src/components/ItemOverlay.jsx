@@ -30,14 +30,15 @@ const ItemOverlay = ({ item }) => {
       </div>
 
       <h4><em>HHP Unlocks</em></h4>
-        <div className="source-list">
-          {itemSources.map((src) => (
-            <div className={`source ${sourceList.includes(src) ? 'owned' : ''}`}>
-              <img src={src.Image} alt="Villager image" />
-              <p>{src.Name}</p>
-            </div>
-          ))}
-        </div>
+
+      <div className="source-list">
+        {itemSources.map((src) => (
+          <div className={`source ${sourceList.includes(src) ? 'owned' : ''}`} key={src.Name}>
+            <img src={src.Image} alt="Villager image" />
+            <p>{src.Name}</p>
+          </div>
+        ))}
+      </div>
 
       <h4><em>Source:</em> {item.Source}</h4>
       <p>{item["Source Notes"]}</p>
