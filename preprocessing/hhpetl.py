@@ -150,7 +150,7 @@ megaDf = megaDf.filter(['Filename','Name','Variation','Pattern','DIY','Buy','Sel
 # Create image link from filename
 megaDf['Image'] = "https://acnhcdn.com/latest/FtrIcon/" + megaDf['Filename'] + ".png"
 # Use menu icon instead for plants that don't have an inventory image
-megaDf.loc[(megaDf['Tag'] == 'Plants') & 
+megaDf.loc[(megaDf['Tag'] == 'Plants') & (megaDf['Tab'] == 'other') &
 		   (megaDf['Name'].str.contains(r"\b(?:bush|plant|tree)\b")), 'Image'] = "https://acnhcdn.com/latest/MenuIcon/" + megaDf['Filename'] + ".png"
 
 megaDf.drop('Filename',axis=1,inplace=True) # Don't need filename anymore
@@ -197,7 +197,8 @@ megaDf['Name'].replace({
     "hockey mask": "hockey mask (White)",
     "paper-bag hood": "paper-bag hood (Beige)",
     "stagehand hat": "stagehand hat (Black)",
-    "handlebar mustache": "handlebar mustache (Hair Color)"
+    "handlebar mustache": "handlebar mustache (Hair Color)",
+		"cowrie": "bivalve"
 }, inplace=True)
 
 # Incorrect names in dictionary
@@ -344,46 +345,6 @@ rock = {
 	'Cyrus': False,
 	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditStone.png'
 }
-hardwoodStump = {
-	'Name': 'hardwood-tree stump',
-	'DIY': False,
-	'Source': 'Decorating mode',
-	'Tab': 'other',
-	'Tag': 'Plants',
-	'Customize': False,
-	'Cyrus': False,
-	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeOakStump.png'
-}
-cedarStump = {
-	'Name': 'cedar-tree stump',
-	'DIY': False,
-	'Source': 'Decorating mode',
-	'Tab': 'other',
-	'Tag': 'Plants',
-	'Customize': False,
-	'Cyrus': False,
-	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeCedarStump.png'
-}
-coconutStump = {
-	'Name': 'coconut-tree stump',
-	'DIY': False,
-	'Source': 'Decorating mode',
-	'Tab': 'other',
-	'Tag': 'Plants',
-	'Customize': False,
-	'Cyrus': False,
-	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreePalmStump.png'
-}
-bambooStump = {
-	'Name': 'cut bamboo',
-	'DIY': False,
-	'Source': 'Decorating mode',
-	'Tab': 'other',
-	'Tag': 'Plants',
-	'Customize': False,
-	'Cyrus': False,
-	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeBambooStump.png'
-}
 decorCedar = {
 	'Name': 'decorated cedar tree',
 	'DIY': False,
@@ -395,7 +356,7 @@ decorCedar = {
 	'Image': 'https://acnhcdn.com/latest/FtrIcon/GardenEditTreeCedarDeco.png'
 }
 
-decorModeItems = pd.DataFrame([wallpaperItem,flooringItem,recipeItem,rock,hardwoodStump,cedarStump,coconutStump,bambooStump,decorCedar])
+decorModeItems = pd.DataFrame([wallpaperItem,flooringItem,recipeItem,rock,decorCedar])
 megaDf = pd.concat([megaDf,decorModeItems],ignore_index=True)
 
 # ====================================== Mapping dictionary of villager furniture lists and checking for missing items ======================================

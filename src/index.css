@@ -303,7 +303,7 @@ input:focus {
   background-color: var(--light-yellow);
   padding: 24px;
   border-radius: 12px;
-  max-width: 640px;
+  max-width: 660px;
   filter: drop-shadow(rgba(36,72,70,0.34) -2px 2px 12px)
 }
 

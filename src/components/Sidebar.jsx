@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Accordion from './Accordion'
 import AccordionItem from './AccordionItem'
 import villagers from '../villagers.json'
+import krisIcon from '../assets/icons/kris-icon.png'
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +84,7 @@ const Sidebar = () => {
               <p>
                 Happy designing,
               <br />
-                <img className='mayor-icon' src="src\assets\icons\kris-icon.png" alt="Kris icon"/> <em>Kris</em> of <em>Orion Island</em>
+                <img className='mayor-icon' src={krisIcon} alt="Kris icon"/> <em>Kris</em> of <em>Orion Island</em>
               </p>
             </div>
           </div>}
