@@ -4,8 +4,7 @@ import { ItemContext } from './ItemContext';
 
 const ItemOverlay = ({ item }) => {
   const { sourceList } = useContext(ItemContext);
-  const sourceStrings = item["HHP Source"].join(', ');
-  const itemSources = villagers.filter((villager) => sourceStrings.includes(villager.Name));
+  const itemSources = villagers.filter((villager) => (item["HHP Source"].includes(villager.Name)));
 
   return (
     <div className="overlay">

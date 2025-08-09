@@ -41,7 +41,7 @@ function App() {
         catalogSource.Items.forEach(item => newItems.add(item));
       }
   
-      if (newVillagerCount >= 6 && extendedSources.includes(school)) {
+      if (newVillagerCount >= 6 && extendedSources.includes(school) && !sourceList.includes(afterSchool)) {
         extendedSources.push(afterSchool);
         afterSchool.Items.forEach(item => newItems.add(item));
       }
@@ -55,6 +55,8 @@ function App() {
   const addItem = (source) => {
     if (sourceList.includes(source)) return;
 
+    const newItems = new Set(itemList);
+
     let newVillagerCount = villagerCount;
     // Count villagers only
     if (source.Filename !== null) {
@@ -63,20 +65,23 @@ function App() {
     }
 
     let newSources = [...sourceList, source];
+
     if (newVillagerCount >= 27 && !sourceList.includes(catalogSource)) {
-      newSources = [...newSources, catalogSource]
+      newSources = [...newSources, catalogSource];
+      catalogSource.Items.forEach(item => newItems.add(item));
     }
 
-    if (newVillagerCount >= 6 && sourceList.includes(school)) {
-      newSources = [...newSources, afterSchool]
+    if (newVillagerCount >= 6 && newSources.includes(school) && !newSources.includes(afterSchool)) {
+      newSources = [...newSources, afterSchool];
+      afterSchool.Items.forEach(item => newItems.add(item));
     }
-
-    const newItems = new Set(itemList);
+    
     source.Items.forEach(item => newItems.add(item));
 
     Cookies.set('sourceList', [...newSources.map(src => src.Name)], { expires: 7 });
     setSourceList(newSources);
     setItemList(Array.from(newItems));
+    console.log(sourceList);
     }
 
   const deleteItem = (source) => {
@@ -93,7 +98,7 @@ function App() {
       newSources = newSources.filter(s => s != catalogSource);
     }
 
-    if (newVillagerCount < 6 | !sourceList.includes(school)) {
+    if (newVillagerCount < 6 | !newSources.includes(school)) {
       newSources = newSources.filter(s => s != afterSchool)
     }
 
