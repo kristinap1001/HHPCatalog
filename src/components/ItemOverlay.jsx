@@ -39,6 +39,16 @@ const ItemOverlay = ({ item }) => {
         ))}
       </div>
 
+      <button key={item}
+        // onClick={() => (toggleCategory(category))}
+        className={`override-button ${itemSources.includes(item) ? 'selected' : ''}`}
+      >
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.3334 2.5L6.00002 9.83333L2.66669 6.5" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        <h4>Catalogued (click to manually add)</h4>
+      </button>
+
       <h4><em>Source:</em> {item.Source}</h4>
       <p>{item["Source Notes"]}</p>
     </div>

@@ -27,4 +27,7 @@ villagers.loc[(villagers['Name'] == 'Leif Lesson'), 'Image'] = 'https://acnhcdn.
 villagers.loc[(villagers['Name'] == 'Start'), 'Image'] = 'https://dodo.ac/np/images/f/f6/Delivery_NH_Inv_Icon.png'
 villagers.loc[(villagers['Name'] == 'From player catalog after 27th home'), 'Image'] = 'https://dodo.ac/np/images/3/39/Menu_Nook_Shopping_NH_Icon.png'
 
+villagers.loc[(villagers['Name'] == 'Tulin'), 'Image'] = 'src/assets/icons/Tulin_NH_Villager_Icon.png'
+villagers.loc[(villagers['Name'] == 'Mineru'), 'Image'] = 'src/assets/icons/Mineru_NH_Villager_Icon.png'
+
 villagers.to_json("src/villagers.json",orient='records',force_ascii=False)

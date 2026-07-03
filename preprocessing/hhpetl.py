@@ -95,23 +95,24 @@ for filename in os.listdir('preprocessing/acnh_data'):
 		newName = filename[52:] # "Data Spreadsheet..." prefix is 52 characters long
 	else:
 		newName = filename
-	newName = newName.lower().replace(" ","")
+	newName = newName.lower().replace(" ","").replace("_","").replace("-","")
 	os.rename('preprocessing/acnh_data/'+filename, 'preprocessing/acnh_data/'+newName)
 
 # Create dataframes
 varList = []
 dfList = []
 for filename in os.listdir('preprocessing/acnh_data'):
-	varName = os.path.splitext(filename)[0] # removes '.csv'
-	data = pd.read_csv('preprocessing/acnh_data/'+filename,dtype=object)
-	globals()[varName] = data
+	if not filename.startswith('pre3.0'):
+		varName = os.path.splitext(filename)[0] # removes '.csv'
+		data = pd.read_csv('preprocessing/acnh_data/'+filename,dtype=object)
+		globals()[varName] = data
 
-	# Add column with the category/"tab" name
-	globals()[varName]["Tab"] = varName
+		# Add column with the category/"tab" name
+		globals()[varName]["Tab"] = varName
 
-	# Lists of dfs and their names
-	varList.append(varName)
-	dfList.append(globals()[varName])
+		# Lists of dfs and their names
+		varList.append(varName)
+		dfList.append(globals()[varName])
 
 # ================================================== Removing items that can't be used in HHP ==================================================
 
@@ -148,7 +149,7 @@ megaDf['DIY'] = megaDf['DIY'].map({'Yes':True,'No':False}).astype(bool)
 megaDf = megaDf.filter(['Filename','Name','Variation','Pattern','DIY','Buy','Sell','Source','Source Notes','Catalog','Tab','Tag','Customize','Cyrus'])
 
 # Create image link from filename
-megaDf['Image'] = "https://acnhcdn.com/latest/FtrIcon/" + megaDf['Filename'] + ".png"
+megaDf['Image'] = "https://nh-cdn.catalogue.ac/FtrIcon/" + megaDf['Filename'] + ".png"
 # Use menu icon instead for plants that don't have an inventory image
 megaDf.loc[(megaDf['Tag'] == 'Plants') & (megaDf['Tab'] == 'other') &
 		   (megaDf['Name'].str.contains(r"\b(?:bush|plant|tree)\b")), 'Image'] = "https://acnhcdn.com/latest/MenuIcon/" + megaDf['Filename'] + ".png"

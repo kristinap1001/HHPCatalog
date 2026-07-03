@@ -59,6 +59,10 @@ h2 {
   font-size: 48px;
 }
 
+h4 {
+  /* color: var(--brown); */
+}
+
 em {
   font-style: normal;
 }
@@ -413,6 +417,34 @@ input:focus {
   width: 20px;
   height: 20px;
   margin-right: 2px;
+}
+
+.overlay .override-button {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 12px;
+  transform-origin:center left;
+  color: var(--brown);
+}
+
+.overlay .override-button:active {
+  scale: 99%;
+}
+
+.overlay .override-button svg {
+  width: 24px;
+  height: 24px;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2px;
+  margin-right: 8px;
+  color: var(--white);
+}
+
+.overlay .override-button.selected svg {
+  color: var(--brown);
+  background-color: var(--yellow);
 }
 
 /* -------------------------------------- Sidebar -------------------------------------- */
