@@ -4,5 +4,7 @@ export const ItemContext = createContext({
   itemList: [],
   villagerCount: 0,
   addItem: (source) => {},
-  deleteItem: (source) => {}
+  deleteItem: (source) => {},
+  overrideItem: (item) => {},
+  deleteOverrideItem: (item) => {}
 });

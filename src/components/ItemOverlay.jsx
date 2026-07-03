@@ -1,10 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import villagers from '../villagers.json'
 import { ItemContext } from './ItemContext';
 
 const ItemOverlay = ({ item }) => {
-  const { sourceList } = useContext(ItemContext);
+  const { sourceList, itemList, overrideItem, deleteOverrideItem } = useContext(ItemContext);
   const itemSources = villagers.filter((villager) => (item["HHP Source"].includes(villager.Name)));
+
+  const [selected, setSelected] = useState(false);
+
+  const override = (item) => {
+    const status = itemList.includes(item.Name);
+    if (status) {
+      deleteOverrideItem(item)
+    } else {
+      overrideItem(item)
+    }
+    setSelected(!status)
+  }
 
   return (
     <div className="overlay">
@@ -40,8 +52,8 @@ const ItemOverlay = ({ item }) => {
       </div>
 
       <button key={item}
-        // onClick={() => (toggleCategory(category))}
-        className={`override-button ${itemSources.includes(item) ? 'selected' : ''}`}
+        onClick={() => (override(item))}
+        className={`override-button ${itemList.includes(item.Name) ? 'selected' : ''}`}
       >
         <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.3334 2.5L6.00002 9.83333L2.66669 6.5" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
