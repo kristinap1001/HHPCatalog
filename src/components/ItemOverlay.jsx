@@ -3,13 +3,14 @@ import villagers from '../villagers.json'
 import { ItemContext } from './ItemContext';
 
 const ItemOverlay = ({ item }) => {
-  const { sourceList, itemList, overrideItem, deleteOverrideItem } = useContext(ItemContext);
+  const { sourceList, itemList, overrideItems, overrideItem, deleteOverrideItem } = useContext(ItemContext);
   const itemSources = villagers.filter((villager) => (item["HHP Source"].includes(villager.Name)));
 
   const [selected, setSelected] = useState(false);
 
   const override = (item) => {
-    const status = itemList.includes(item.Name);
+    console.log(overrideItems)
+    const status = overrideItems.includes(item.Name);
     if (status) {
       deleteOverrideItem(item)
     } else {
@@ -53,12 +54,12 @@ const ItemOverlay = ({ item }) => {
 
       <button key={item}
         onClick={() => (override(item))}
-        className={`override-button ${itemList.includes(item.Name) ? 'selected' : ''}`}
+        className={`override-button  ${overrideItems.includes(item.Name) ? 'pending' : ''} ${itemList.includes(item.Name) ? 'selected' : ''}`}
       >
         <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.3334 2.5L6.00002 9.83333L2.66669 6.5" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
-        <h4>Catalogued (click to manually add)</h4>
+        <h4>Catalogued (click to manually add - available after 27th home)</h4>
       </button>
 
       <h4><em>Source:</em> {item.Source}</h4>

@@ -442,10 +442,19 @@ input:focus {
   color: var(--white);
 }
 
-.overlay .override-button.selected svg {
+.overlay .override-button.pending svg {
   color: var(--brown);
   background-color: var(--yellow);
+  opacity: 0.5;
 }
+
+.overlay .override-button.selected svg, .overlay .override-button.selected.pending svg {
+  color: var(--brown);
+  background-color: var(--yellow);
+  opacity: 1;
+}
+
+
 
 /* -------------------------------------- Sidebar -------------------------------------- */
 
